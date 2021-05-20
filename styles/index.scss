@@ -199,6 +199,67 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   }
 }
 
+.chooseus__container {
+  width: 327px;
+  height: 902px;
+  margin: 0 auto;
+  background-color: $darkgreyblue;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &--title {
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: $white-text;
+    padding-top: 3.5rem;
+    margin-bottom: 2rem;
+  }
+  &--description {
+    font-family: "Barlow", sans-serif;
+    text-align: center;
+    width: 91%;
+    line-height: 25px;
+    color: $white-text;
+  }
+}
+
+.benefit__container {
+  width: 279px;
+  height: 382px;
+  background-color: $darkcyan;
+  padding-bottom: 2rem;
+  margin: 2rem auto;
+  border-radius: 10px;
+  position: relative;
+  bottom: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  &--img {
+    width: 71px;
+    height: 72px;
+    margin-top: 1rem;
+  }
+
+  &--title {
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: $white-text;
+  }
+
+  &--description {
+    font-family: "Barlow", sans-serif;
+    color: $white-text;
+    text-align: center;
+    width: 76%;
+  }
+}
+
 @media (max-width: 765px) {
   .toggle-button {
     display: flex;

@@ -1,4 +1,5 @@
 const productBox = document.getElementById("products__container");
+const benefitsBox = document.getElementById("benefits__container");
 
 let products = [
   {
@@ -27,6 +28,27 @@ let products = [
   },
 ];
 
+let benefits = [
+  {
+    image: "../assets/home/desktop/icon-coffee-bean.svg",
+    title: "Best quality",
+    description:
+      "Discover an endless variety of the world’s best artisan coffee from each of our roasters.",
+  },
+  {
+    image: "../assets/home/desktop/icon-gift.svg",
+    title: "Exclusive benefits",
+    description:
+      "Special offers and swag when you subscribe, including 30% off your first shipment.",
+  },
+  {
+    image: "../assets/home/desktop/icon-truck.svg",
+    title: "Free shipping",
+    description:
+      "We cover the cost and coffee is delivered fast. Peak freshness: guaranteed.",
+  },
+];
+
 const renderProducts = (arr) => {
   const products = arr
     .map((product) => {
@@ -43,3 +65,20 @@ const renderProducts = (arr) => {
   productBox.innerHTML = products;
 };
 renderProducts(products);
+
+const renderBenefits = (arr) => {
+  const benefits = arr
+    .map((benefit) => {
+      return `
+          <div class="benefit__container">
+          <img class="benefit__container--img" src="${benefit.image}"/>
+          <h2 class="benefit__container--title">${benefit.title}</h2>
+          <p class="benefit__container--description">${benefit.description}</p>
+          </div>
+          `;
+    })
+    .join("");
+
+  benefitsBox.innerHTML = benefits;
+};
+renderBenefits(benefits);
