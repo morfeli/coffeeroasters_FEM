@@ -225,6 +225,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   }
 }
 
+#benefits__container {
+  height: 90vh;
+}
+
 .benefit__container {
   width: 279px;
   height: 382px;
@@ -259,7 +263,17 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     width: 76%;
   }
 }
-
+.works__container {
+  height: 1116px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &--title {
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    color: $grey;
+  }
+}
 @media (max-width: 765px) {
   .toggle-button {
     display: flex;
