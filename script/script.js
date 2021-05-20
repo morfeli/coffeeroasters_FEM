@@ -110,7 +110,7 @@ const renderSteps = (arr) => {
     .map((step) => {
       return `
             <div class="step__container">
-            <h1>${step.number}</h1>
+            <h1 class="step__container--number">${step.number}</h1>
             <h2 class="step__container--title">${step.title}</h2>
             <p class="step__container--description">${step.description}</p>
             </div>

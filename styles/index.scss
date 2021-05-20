@@ -147,7 +147,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 .collection__container {
   width: 375px;
   height: 1321px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
   &--box {
     position: relative;
   }
@@ -272,8 +275,76 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     font-family: "Fraunces", serif;
     font-weight: bold;
     color: $grey;
+    margin-bottom: 5rem;
   }
 }
+
+#steps__container {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.step__container {
+  display: flex;
+  flex-direction: column;
+  height: 252px;
+  justify-content: space-evenly;
+  &--number {
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    font-size: 4rem;
+    color: $paleorange;
+  }
+  &--title {
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  &--description {
+    font-family: "Barlow", sans-serif;
+    line-height: 25px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  &--button {
+    background-color: $darkcyan;
+    width: 217px;
+    height: 56px;
+    border: none;
+    border-radius: 8px;
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: $white-text;
+    margin-top: 3rem;
+  }
+}
+
+.footer__container {
+  height: 418px;
+  width: 327px;
+  margin: 2rem auto;
+  background-color: $darkgreyblue;
+
+  &--links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 8rem;
+  }
+
+  &--icons {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto;
+  }
+}
+
+.parent {
+  list-style: none;
+}
+
 @media (max-width: 765px) {
   .toggle-button {
     display: flex;
