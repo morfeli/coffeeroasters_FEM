@@ -3,11 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+@import "partial";
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 2rem;
 }
 
 .navbar-links {
@@ -23,11 +25,14 @@
   list-style: none;
 }
 
-.navbar li a {
+.navbar-item {
   text-decoration: none;
   display: block;
   margin-right: 0.5rem;
   padding: 0.8rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  color: $grey;
 }
 
 .toggle-button {
@@ -41,6 +46,7 @@
   height: auto;
   cursor: pointer;
   transition: all 0.5s ease-out;
+  margin-top: 2rem;
 }
 
 input[type="checkbox"] {
@@ -94,6 +100,48 @@ input[type="checkbox"]:checked ~ .toggle-button .bottom {
 input[type="checkbox"]:checked ~ .toggle-button .middle {
   transform: translateX(-20px);
   opacity: 0;
+}
+
+.hero__container {
+  background-image: url("../assets/home/mobile/image-hero-coffeepress.jpg");
+  background-position: center;
+  background-size: contain;
+  height: 500px;
+  width: 327px;
+  margin: 3rem auto;
+  border-radius: 10px;
+
+  &--title {
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding-top: 6rem;
+    text-align: center;
+    color: $white-text;
+  }
+
+  &--description {
+    font-family: "Barlow", sans-serif;
+    color: $white-text;
+    padding-top: 2rem;
+    width: 75vw;
+    margin: 0 auto;
+    line-height: 25px;
+  }
+
+  &--button {
+    margin-top: 2rem;
+    margin-left: 3rem;
+    width: 217px;
+    height: 56px;
+    background-color: $darkcyan;
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: $white-text;
+    border: none;
+    border-radius: 5px;
+  }
 }
 
 @media (max-width: 765px) {
