@@ -3,3 +3,105 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar li a {
+  text-decoration: none;
+  display: block;
+  margin-right: 0.5rem;
+  padding: 0.8rem;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+input[type="checkbox"] {
+  display: none;
+  visibility: hidden;
+}
+
+.middle {
+  height: 3px;
+  width: 1.875rem;
+  background-color: black;
+  border-radius: 3.125rem;
+  position: absolute;
+  transition: 0.3s ease;
+}
+
+.top {
+  bottom: 5px;
+  height: 3px;
+  width: 1.875rem;
+  background-color: black;
+  border-radius: 3.125rem;
+  position: absolute;
+  transition: 0.3s ease;
+}
+
+.bottom {
+  top: 10px;
+  height: 3px;
+  width: 1.875rem;
+  background-color: black;
+  border-radius: 3.125rem;
+  position: absolute;
+  transition: 0.3s ease;
+}
+
+input[type="checkbox"]:checked ~ .toggle-button .top {
+  transform: rotate(-50deg);
+  width: 1.56rem;
+  transform-origin: right;
+  top: -10px;
+}
+
+input[type="checkbox"]:checked ~ .toggle-button .bottom {
+  transform: rotate(50deg);
+  width: 1.56rem;
+  transform-origin: right;
+  top: 10px;
+}
+
+input[type="checkbox"]:checked ~ .toggle-button .middle {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+
+@media (max-width: 765px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+}

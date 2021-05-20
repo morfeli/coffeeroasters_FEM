@@ -4,4 +4,133 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar li a {
+  text-decoration: none;
+  display: block;
+  margin-right: 0.5rem;
+  padding: 0.8rem;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+input[type="checkbox"] {
+  display: none;
+  visibility: hidden;
+}
+
+.middle {
+  height: 3px;
+  width: 1.875rem;
+  background-color: black;
+  border-radius: 3.125rem;
+  position: absolute;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.top {
+  bottom: 5px;
+  height: 3px;
+  width: 1.875rem;
+  background-color: black;
+  border-radius: 3.125rem;
+  position: absolute;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.bottom {
+  top: 10px;
+  height: 3px;
+  width: 1.875rem;
+  background-color: black;
+  border-radius: 3.125rem;
+  position: absolute;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+input[type="checkbox"]:checked ~ .toggle-button .top {
+  -webkit-transform: rotate(-50deg);
+          transform: rotate(-50deg);
+  width: 1.56rem;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  top: -10px;
+}
+
+input[type="checkbox"]:checked ~ .toggle-button .bottom {
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+  width: 1.56rem;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  top: 10px;
+}
+
+input[type="checkbox"]:checked ~ .toggle-button .middle {
+  -webkit-transform: translateX(-20px);
+          transform: translateX(-20px);
+  opacity: 0;
+}
+
+@media (max-width: 765px) {
+  .toggle-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+  }
+}
 /*# sourceMappingURL=index.css.map */
