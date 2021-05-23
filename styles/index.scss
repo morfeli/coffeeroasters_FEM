@@ -110,6 +110,16 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   width: 327px;
   margin: 3rem auto;
   border-radius: 10px;
+  @include tablet {
+    background-image: url("../assets/home/tablet/image-hero-coffeepress.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 689px;
+    margin: 3rem auto;
+    border-radius: 10px;
+  }
 
   &--title {
     font-family: "Fraunces", serif;
@@ -118,15 +128,27 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     padding-top: 6rem;
     text-align: center;
     color: $white-text;
+    @include tablet {
+      width: 60%;
+      font-size: 3.5rem;
+    }
   }
 
   &--description {
     font-family: "Barlow", sans-serif;
     color: $white-text;
     padding-top: 2rem;
-    width: 75vw;
+
+    text-align: center;
     margin: 0 auto;
     line-height: 25px;
+    @include tablet {
+      width: 64%;
+      float: left;
+      margin-left: 2rem;
+      line-height: 25px;
+      text-align: left;
+    }
   }
 
   &--button {
@@ -276,6 +298,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     font-weight: bold;
     color: $grey;
     margin-bottom: 5rem;
+    margin-top: 4rem;
   }
 }
 

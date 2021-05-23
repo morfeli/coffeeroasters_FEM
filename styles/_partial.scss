@@ -22,3 +22,11 @@ $bigselection-active: #0e8784;
 
 $menuclosed_open-default: #0e8784;
 $menuclosed_open-hover: #66d2cf;
+
+$tablet: 768px;
+
+@mixin tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}

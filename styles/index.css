@@ -138,6 +138,19 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   border-radius: 10px;
 }
 
+@media (min-width: 768px) {
+  .hero__container {
+    background-image: url("../assets/home/tablet/image-hero-coffeepress.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 689px;
+    margin: 3rem auto;
+    border-radius: 10px;
+  }
+}
+
 .hero__container--title {
   font-family: "Fraunces", serif;
   font-weight: bold;
@@ -147,13 +160,30 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   color: #fefcf7;
 }
 
+@media (min-width: 768px) {
+  .hero__container--title {
+    width: 60%;
+    font-size: 3.5rem;
+  }
+}
+
 .hero__container--description {
   font-family: "Barlow", sans-serif;
   color: #fefcf7;
   padding-top: 2rem;
-  width: 75vw;
+  text-align: center;
   margin: 0 auto;
   line-height: 25px;
+}
+
+@media (min-width: 768px) {
+  .hero__container--description {
+    width: 64%;
+    float: left;
+    margin-left: 2rem;
+    line-height: 25px;
+    text-align: left;
+  }
 }
 
 .hero__container--button {
@@ -340,6 +370,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   font-weight: bold;
   color: #848990;
   margin-bottom: 5rem;
+  margin-top: 4rem;
 }
 
 #steps__container {
