@@ -427,6 +427,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   width: 327px;
   margin: 2rem auto;
   background-color: $darkgreyblue;
+  @include tablet {
+    width: 688px;
+  }
 
   &--links {
     display: flex;
@@ -440,6 +443,15 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     display: flex;
     justify-content: space-between;
     margin: 2rem auto;
+  }
+}
+
+.footer__container--links ul {
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
   }
 }
 

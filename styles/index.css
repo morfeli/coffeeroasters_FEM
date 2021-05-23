@@ -583,6 +583,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   background-color: #343e4c;
 }
 
+@media (min-width: 768px) {
+  .footer__container {
+    width: 688px;
+  }
+}
+
 .footer__container--links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -604,6 +610,21 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 2rem auto;
+}
+
+@media (min-width: 768px) {
+  .footer__container--links ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 6rem;
+  }
 }
 
 .parent {
