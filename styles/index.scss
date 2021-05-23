@@ -280,6 +280,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
 #benefits__container {
   height: 90vh;
+  @include tablet {
+    height: 10vh;
+  }
 }
 
 .benefit__container {
@@ -297,6 +300,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   justify-content: space-around;
   @include tablet {
     width: 573px;
+    height: 180px;
     flex-direction: row;
   }
   .benefit__container--tabletBox {

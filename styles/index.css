@@ -360,6 +360,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   height: 90vh;
 }
 
+@media (min-width: 768px) {
+  #benefits__container {
+    height: 10vh;
+  }
+}
+
 .benefit__container {
   width: 279px;
   height: 382px;
@@ -386,6 +392,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 @media (min-width: 768px) {
   .benefit__container {
     width: 573px;
+    height: 180px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
