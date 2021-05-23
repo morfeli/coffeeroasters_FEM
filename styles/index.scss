@@ -255,6 +255,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include tablet {
+    width: 688px;
+  }
   &--title {
     font-family: "Fraunces", serif;
     font-weight: bold;
@@ -269,6 +272,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     width: 91%;
     line-height: 25px;
     color: $white-text;
+    @include tablet {
+      width: 78%;
+    }
   }
 }
 
@@ -289,6 +295,19 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  @include tablet {
+    width: 573px;
+    flex-direction: row;
+  }
+  .benefit__container--tabletBox {
+    @include tablet {
+      width: 50vw;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+    }
+  }
 
   &--img {
     width: 71px;
@@ -308,25 +327,44 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     color: $white-text;
     text-align: center;
     width: 76%;
+    @include tablet {
+      text-align: left;
+      width: 95%;
+      margin-top: 2rem;
+      line-height: 25px;
+    }
   }
 }
 .works__container {
-  height: 1116px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include tablet {
+    align-items: unset;
+  }
   &--title {
     font-family: "Fraunces", serif;
     font-weight: bold;
     color: $grey;
     margin-bottom: 5rem;
     margin-top: 4rem;
+    @include tablet {
+      float: left;
+      margin-left: 2rem;
+      margin-top: 5rem;
+      margin-bottom: 10rem;
+    }
   }
 }
 
 #steps__container {
   text-align: center;
   margin: 0 auto;
+  @include tablet {
+    display: flex;
+    align-items: baseline;
+    text-align: unset;
+  }
 }
 
 .step__container {
@@ -334,22 +372,37 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   flex-direction: column;
   height: 252px;
   justify-content: space-evenly;
+  @include tablet {
+    align-items: center;
+  }
   &--number {
     font-family: "Fraunces", serif;
     font-weight: bold;
     font-size: 4rem;
     color: $paleorange;
+    @include tablet {
+      margin: 3rem auto;
+      //   margin-left: 1rem;
+      font-size: 6rem;
+    }
   }
   &--title {
     font-family: "Fraunces", serif;
     font-weight: bold;
     font-size: 2rem;
+    @include tablet {
+      width: 223px;
+      margin-bottom: 5rem;
+    }
   }
   &--description {
     font-family: "Barlow", sans-serif;
     line-height: 25px;
     width: 90%;
     margin: 0 auto;
+    @include tablet {
+      line-height: 35px;
+    }
   }
   &--button {
     background-color: $darkcyan;
@@ -361,7 +414,11 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     font-weight: bold;
     font-size: 1.2rem;
     color: $white-text;
-    margin-top: 3rem;
+    margin: 3rem auto;
+    @include tablet {
+      margin: 12rem auto;
+      margin-left: 1rem;
+    }
   }
 }
 

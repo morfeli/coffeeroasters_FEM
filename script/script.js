@@ -96,8 +96,10 @@ const renderBenefits = (arr) => {
       return `
           <div class="benefit__container">
           <img class="benefit__container--img" src="${benefit.image}"/>
+          <div class="benefit__container--tabletBox">
           <h2 class="benefit__container--title">${benefit.title}</h2>
           <p class="benefit__container--description">${benefit.description}</p>
+          </div>
           </div>
           `;
     })

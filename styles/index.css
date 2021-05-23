@@ -327,6 +327,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
           align-items: center;
 }
 
+@media (min-width: 768px) {
+  .chooseus__container {
+    width: 688px;
+  }
+}
+
 .chooseus__container--title {
   font-family: "Fraunces", serif;
   font-weight: bold;
@@ -342,6 +348,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   width: 91%;
   line-height: 25px;
   color: #fefcf7;
+}
+
+@media (min-width: 768px) {
+  .chooseus__container--description {
+    width: 78%;
+  }
 }
 
 #benefits__container {
@@ -371,6 +383,33 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       justify-content: space-around;
 }
 
+@media (min-width: 768px) {
+  .benefit__container {
+    width: 573px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 768px) {
+  .benefit__container .benefit__container--tabletBox {
+    width: 50vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+  }
+}
+
 .benefit__container--img {
   width: 71px;
   height: 72px;
@@ -391,8 +430,16 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   width: 76%;
 }
 
+@media (min-width: 768px) {
+  .benefit__container--description {
+    text-align: left;
+    width: 95%;
+    margin-top: 2rem;
+    line-height: 25px;
+  }
+}
+
 .works__container {
-  height: 1116px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,6 +452,14 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
           align-items: center;
 }
 
+@media (min-width: 768px) {
+  .works__container {
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+  }
+}
+
 .works__container--title {
   font-family: "Fraunces", serif;
   font-weight: bold;
@@ -413,9 +468,30 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   margin-top: 4rem;
 }
 
+@media (min-width: 768px) {
+  .works__container--title {
+    float: left;
+    margin-left: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+  }
+}
+
 #steps__container {
   text-align: center;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  #steps__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    text-align: unset;
+  }
 }
 
 .step__container {
@@ -432,11 +508,26 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
           justify-content: space-evenly;
 }
 
+@media (min-width: 768px) {
+  .step__container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .step__container--number {
   font-family: "Fraunces", serif;
   font-weight: bold;
   font-size: 4rem;
   color: #fdd6ba;
+}
+
+@media (min-width: 768px) {
+  .step__container--number {
+    margin: 3rem auto;
+    font-size: 6rem;
+  }
 }
 
 .step__container--title {
@@ -445,11 +536,24 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   font-size: 2rem;
 }
 
+@media (min-width: 768px) {
+  .step__container--title {
+    width: 223px;
+    margin-bottom: 5rem;
+  }
+}
+
 .step__container--description {
   font-family: "Barlow", sans-serif;
   line-height: 25px;
   width: 90%;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .step__container--description {
+    line-height: 35px;
+  }
 }
 
 .step__container--button {
@@ -462,7 +566,14 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   font-weight: bold;
   font-size: 1.2rem;
   color: #fefcf7;
-  margin-top: 3rem;
+  margin: 3rem auto;
+}
+
+@media (min-width: 768px) {
+  .step__container--button {
+    margin: 12rem auto;
+    margin-left: 1rem;
+  }
 }
 
 .footer__container {
