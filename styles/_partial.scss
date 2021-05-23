@@ -23,7 +23,14 @@ $bigselection-active: #0e8784;
 $menuclosed_open-default: #0e8784;
 $menuclosed_open-hover: #66d2cf;
 
+$mobile: 375px;
 $tablet: 768px;
+
+@mixin mobile {
+  @media (min-width: $mobile) {
+    @content;
+  }
+}
 
 @mixin tablet {
   @media (min-width: $tablet) {

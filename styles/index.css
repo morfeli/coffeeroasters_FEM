@@ -202,7 +202,6 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
 .collection__container {
   width: 375px;
-  height: 1321px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,6 +213,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
+  margin-bottom: 5rem;
 }
 
 .collection__container--box {
@@ -228,6 +228,13 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   color: #848990;
 }
 
+@media (min-width: 768px) {
+  .collection__container--title {
+    font-size: 6rem;
+    width: 689px;
+  }
+}
+
 .collection__container--gradient {
   position: absolute;
   top: 0px;
@@ -235,6 +242,13 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   height: 100%;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, rgba(254, 252, 247, 0.7)), to(rgba(254, 247, 247, 0)));
   background: linear-gradient(to top, rgba(254, 252, 247, 0.7) 25%, rgba(254, 247, 247, 0) 100%);
+}
+
+@media (min-width: 768px) {
+  #products__container {
+    position: relative;
+    bottom: 50px;
+  }
 }
 
 .coffee__container {
@@ -245,6 +259,18 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .coffee__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .coffee__container--img {
@@ -262,11 +288,25 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .coffee__container--title {
+    width: 255px;
+  }
+}
+
 .coffee__container--description {
   font-family: "Barlow", sans-serif;
   text-align: center;
   margin: auto;
   width: 75%;
+}
+
+@media (min-width: 768px) {
+  .coffee__container--description {
+    width: 282px;
+    text-align: left;
+    line-height: 25px;
+  }
 }
 
 .chooseus__container {

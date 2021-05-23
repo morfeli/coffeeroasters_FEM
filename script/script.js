@@ -77,8 +77,10 @@ const renderProducts = (arr) => {
       return `
         <div class="coffee__container">
         <img class="coffee__container--img" src="${product.image}"/>
+        <div class="coffee__container--tabletBox">
         <h2 class="coffee__container--title">${product.title}</h2>
         <p class="coffee__container--description">${product.description}</p>
+        </div>
         </div>
         `;
     })
