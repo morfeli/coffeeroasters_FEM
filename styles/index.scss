@@ -121,6 +121,13 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     border-radius: 10px;
     @include desktop {
       background-image: url("../assets/home/desktop/image-hero-coffeepress.jpg");
+      width: 1280px;
+      height: 600px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
     }
   }
 
@@ -134,6 +141,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     @include tablet {
       width: 60%;
       font-size: 3.5rem;
+    }
+    @include desktop {
+      font-size: 4.5rem;
+      width: 493px;
     }
   }
 
@@ -151,6 +162,11 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       line-height: 25px;
       text-align: left;
     }
+    @include desktop {
+      font-size: 1.3rem;
+      width: 41%;
+      line-height: 35px;
+    }
   }
 
   &--button {
@@ -165,6 +181,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     color: $white-text;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
   }
 }
 
@@ -189,6 +206,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       font-size: 6rem;
       width: 689px;
     }
+    @include desktop {
+      font-size: 10rem;
+      width: 1111px;
+    }
   }
   &--gradient {
     position: absolute;
@@ -208,6 +229,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     position: relative;
     bottom: 50px;
   }
+  @include desktop {
+    display: flex;
+  }
 }
 
 .coffee__container {
@@ -217,11 +241,19 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     flex-direction: row;
     align-items: center;
   }
+  @include desktop {
+    flex-direction: column;
+  }
 
   &--img {
     height: 151px;
     width: 200px;
     margin: 1.5rem auto;
+    @include desktop {
+      width: 255px;
+      height: 193px;
+      margin-bottom: 3rem;
+    }
   }
 
   &--title {
@@ -234,6 +266,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     @include tablet {
       width: 255px;
     }
+    @include desktop {
+      margin: 2rem auto;
+    }
   }
 
   &--description {
@@ -245,6 +280,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       width: 282px;
       text-align: left;
       line-height: 25px;
+    }
+    @include desktop {
+      font-size: 1.5rem;
+      text-align: center;
+      width: 255px;
+      margin-left: 1rem;
     }
   }
 }
@@ -260,6 +301,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   align-items: center;
   @include tablet {
     width: 688px;
+  }
+  @include desktop {
+    width: 1200px;
   }
   &--title {
     font-family: "Fraunces", serif;
@@ -278,6 +322,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     @include tablet {
       width: 78%;
     }
+    @include desktop {
+      width: 44%;
+      line-height: 45px;
+    }
   }
 }
 
@@ -285,6 +333,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   height: 90vh;
   @include tablet {
     height: 10vh;
+  }
+  @include desktop {
+    display: flex;
   }
 }
 
@@ -306,6 +357,11 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     height: 180px;
     flex-direction: row;
   }
+  @include desktop {
+    width: 350px;
+    height: 382px;
+    flex-direction: column;
+  }
   .benefit__container--tabletBox {
     @include tablet {
       width: 50vw;
@@ -313,6 +369,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       flex-direction: column;
       align-items: flex-start;
       text-align: left;
+    }
+    @include desktop {
+      flex-direction: column;
+      width: 80%;
+      text-align: center;
+      margin: 2rem auto;
     }
   }
 
@@ -327,6 +389,17 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     font-weight: bold;
     font-size: 2rem;
     color: $white-text;
+    text-align: center;
+    margin: 0 auto;
+    @include tablet {
+      text-align: unset;
+      margin: unset;
+      margin-top: 2rem;
+      margin-left: 0.5rem;
+    }
+    @include desktop {
+      margin: 0 auto;
+    }
   }
 
   &--description {
@@ -334,11 +407,17 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     color: $white-text;
     text-align: center;
     width: 76%;
+    margin: 2rem auto;
     @include tablet {
       text-align: left;
       width: 95%;
       margin-top: 2rem;
       line-height: 25px;
+    }
+    @include desktop {
+      text-align: center;
+      margin: 2rem auto;
+      width: 90%;
     }
   }
 }
@@ -360,6 +439,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       margin-top: 5rem;
       margin-bottom: 10rem;
     }
+    @include desktop {
+      font-size: 3rem;
+    }
   }
 }
 
@@ -370,6 +452,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     display: flex;
     align-items: baseline;
     text-align: unset;
+  }
+  @include desktop {
+    width: 90vw;
+    justify-content: space-between;
   }
 }
 
@@ -409,6 +495,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       line-height: 35px;
       width: 100%;
     }
+    @include desktop {
+      width: 285px;
+    }
   }
   &--button {
     background-color: $darkcyan;
@@ -421,9 +510,13 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     font-size: 1.2rem;
     color: $white-text;
     margin: 3rem auto;
+    cursor: pointer;
     @include tablet {
       margin: 12rem auto;
       margin-left: 1rem;
+    }
+    @include desktop {
+      margin-left: 5rem;
     }
   }
 }
@@ -436,12 +529,19 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   @include tablet {
     width: 688px;
   }
+  @include desktop {
+    width: 1280px;
+    height: 120px;
+  }
 
   &--links {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-top: 8rem;
+    @include desktop {
+      padding-top: unset;
+    }
   }
 
   &--icons {
@@ -449,6 +549,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     display: flex;
     justify-content: space-between;
     margin: 2rem auto;
+    cursor: pointer;
   }
 }
 
@@ -458,6 +559,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     justify-content: center;
     align-items: center;
     margin-top: 6rem;
+  }
+  @include desktop {
+    margin-top: unset;
   }
 }
 

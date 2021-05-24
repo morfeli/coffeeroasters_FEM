@@ -13,19 +13,19 @@ let products = [
     image: "../assets/home/desktop/image-planalto.png",
     title: "Planalto",
     description:
-      "Brazilian dark roast with rich and velvety body, and hints of fruits and nuts",
+      "Brazilian dark roast with rich and velvety body, and hints of fruits and nuts.",
   },
   {
     image: "../assets/home/desktop/image-piccollo.png",
     title: "Piccollo",
     description:
-      "Mild and smooth blend featuring notes of toasted almond and dried cherry",
+      "Mild and smooth blend featuring notes of toasted almond and dried cherry.",
   },
   {
     image: "../assets/home/desktop/image-danche.png",
     title: "Danche",
     description:
-      "Ethiopian hand-harvested blend densely packed with vibrant fruit notes",
+      "Ethiopian hand-harvested blend densely packed with vibrant fruit notes.",
   },
 ];
 
