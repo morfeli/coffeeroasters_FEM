@@ -477,7 +477,6 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
 @media (min-width: 768px) {
   .works__container--title {
-    float: left;
     margin-left: 2rem;
     margin-top: 5rem;
     margin-bottom: 10rem;
@@ -517,9 +516,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
 @media (min-width: 768px) {
   .step__container {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    margin-left: 1.2rem;
   }
 }
 
@@ -532,7 +529,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
 @media (min-width: 768px) {
   .step__container--number {
-    margin: 3rem auto;
+    margin-bottom: 2rem;
     font-size: 6rem;
   }
 }
@@ -560,6 +557,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 @media (min-width: 768px) {
   .step__container--description {
     line-height: 35px;
+    width: 100%;
   }
 }
 

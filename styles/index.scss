@@ -353,7 +353,6 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     margin-bottom: 5rem;
     margin-top: 4rem;
     @include tablet {
-      float: left;
       margin-left: 2rem;
       margin-top: 5rem;
       margin-bottom: 10rem;
@@ -377,7 +376,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   height: 252px;
   justify-content: space-evenly;
   @include tablet {
-    align-items: center;
+    margin-left: 1.2rem;
   }
   &--number {
     font-family: "Fraunces", serif;
@@ -385,8 +384,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     font-size: 4rem;
     color: $paleorange;
     @include tablet {
-      margin: 3rem auto;
-      //   margin-left: 1rem;
+      margin-bottom: 2rem;
       font-size: 6rem;
     }
   }
@@ -406,6 +404,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     margin: 0 auto;
     @include tablet {
       line-height: 35px;
+      width: 100%;
     }
   }
   &--button {
