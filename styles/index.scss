@@ -119,6 +119,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     width: 689px;
     margin: 3rem auto;
     border-radius: 10px;
+    @include desktop {
+      background-image: url("../assets/home/desktop/image-hero-coffeepress.jpg");
+    }
   }
 
   &--title {

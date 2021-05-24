@@ -25,6 +25,7 @@ $menuclosed_open-hover: #66d2cf;
 
 $mobile: 375px;
 $tablet: 768px;
+$desktop: 1440px;
 
 @mixin mobile {
   @media (min-width: $mobile) {
@@ -34,6 +35,12 @@ $tablet: 768px;
 
 @mixin tablet {
   @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop) {
     @content;
   }
 }

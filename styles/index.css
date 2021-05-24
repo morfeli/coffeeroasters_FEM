@@ -151,6 +151,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   }
 }
 
+@media (min-width: 768px) and (min-width: 1440px) {
+  .hero__container {
+    background-image: url("../assets/home/desktop/image-hero-coffeepress.jpg");
+  }
+}
+
 .hero__container--title {
   font-family: "Fraunces", serif;
   font-weight: bold;
