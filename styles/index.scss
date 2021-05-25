@@ -532,6 +532,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   @include desktop {
     width: 1280px;
     height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &--links {
