@@ -151,11 +151,11 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
 @media (min-width: 768px) {
   .hero__container {
-    background-image: url("../assets/about/mobile/image-hero-whitecup.jpg");
+    background-image: url("../assets/about/tablet/image-hero-whitecup.jpg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 400px;
     width: 689px;
     margin: 3rem auto;
     border-radius: 10px;
@@ -164,7 +164,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
 @media (min-width: 768px) and (min-width: 1440px) {
   .hero__container {
-    background-image: url("../assets/about/mobile/image-hero-whitecup.jpg");
+    background-image: url("../assets/about/desktop/image-hero-whitecup.jpg");
     width: 1280px;
     height: 600px;
     background-position: center;
@@ -230,6 +230,20 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   }
 }
 
+@media (min-width: 768px) {
+  .commitment__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .commitment__container--headingBox {
+    margin: 0 auto;
+  }
+}
+
 .commitment__container--img {
   background-image: url("../assets/about/mobile/image-commitment.jpg");
   background-position: center;
@@ -247,8 +261,8 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 500px;
-    width: 327px;
+    height: 470px;
+    width: 281px;
     margin: 3rem auto;
     border-radius: 10px;
   }
@@ -278,8 +292,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
 @media (min-width: 768px) {
   .commitment__container--title {
-    width: 60%;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -302,11 +315,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
 @media (min-width: 768px) {
   .commitment__container--description {
-    width: 64%;
-    float: left;
-    margin-left: 2rem;
+    width: 339px;
     line-height: 25px;
-    text-align: left;
+    text-align: justify;
+    font-size: 0.9rem;
   }
 }
 
