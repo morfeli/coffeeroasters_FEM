@@ -133,7 +133,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     @include desktop {
       background-image: url("../assets/about/desktop/image-hero-whitecup.jpg");
       width: 1280px;
-      height: 600px;
+      height: 450px;
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -187,6 +187,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   @include tablet {
     display: flex;
   }
+  @include desktop {
+    height: 10vh;
+  }
 
   &--headingBox {
     @include tablet {
@@ -218,10 +221,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
-      height: 500px;
-      width: 327px;
+      height: 606px;
+      width: 510px;
       margin: 3rem auto;
-      border-radius: 10px;
+      border-radius: 20px;
     }
   }
 
@@ -236,8 +239,8 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       font-size: 2.5rem;
     }
     @include desktop {
-      font-size: 4.5rem;
-      width: 493px;
+      text-align: unset;
+      font-size: 3rem;
     }
   }
 
@@ -257,7 +260,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     }
     @include desktop {
       font-size: 1.3rem;
-      width: 41%;
+      width: 540px;
       line-height: 35px;
     }
   }
@@ -291,10 +294,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
-      height: 500px;
-      width: 327px;
+      height: 767px;
+      width: 512px;
       margin: 3rem auto;
       border-radius: 10px;
+      left: 360px;
+      top: 560px;
     }
   }
   &--box1 {
@@ -305,6 +310,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     @include tablet {
       width: 688px;
       height: 488px;
+    }
+    @include desktop {
+      width: 1320px;
+      height: 562px;
     }
   }
 
@@ -323,7 +332,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       padding-top: 12rem;
     }
     @include desktop {
-      font-size: 4.5rem;
+      padding-top: 7rem;
+      font-size: 2.5rem;
+      margin-left: 2rem;
+      text-align: unset;
       width: 493px;
     }
   }
@@ -341,8 +353,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     }
     @include desktop {
       font-size: 1.3rem;
-      width: 41%;
+      width: 700px;
+      margin-left: 2rem;
       line-height: 35px;
+      text-align: unset;
     }
   }
 }
@@ -363,6 +377,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     }
     @include desktop {
       font-size: 3rem;
+      margin-left: 6rem;
     }
   }
 }
@@ -370,10 +385,14 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 #locations__container {
   margin: 0 auto;
   @include tablet {
-    width: 688px;
+    width: auto;
     display: flex;
     align-items: baseline;
     margin: 1rem auto;
+  }
+  @include desktop {
+    width: 1200px;
+    margin-left: 1rem;
   }
 }
 

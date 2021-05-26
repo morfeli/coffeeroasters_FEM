@@ -166,7 +166,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   .hero__container {
     background-image: url("../assets/about/desktop/image-hero-whitecup.jpg");
     width: 1280px;
-    height: 600px;
+    height: 450px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -240,6 +240,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   }
 }
 
+@media (min-width: 1440px) {
+  .commitment__container {
+    height: 10vh;
+  }
+}
+
 @media (min-width: 768px) {
   .commitment__container--headingBox {
     margin: 0 auto;
@@ -276,10 +282,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 500px;
-    width: 327px;
+    height: 606px;
+    width: 510px;
     margin: 3rem auto;
-    border-radius: 10px;
+    border-radius: 20px;
   }
 }
 
@@ -300,8 +306,8 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
 @media (min-width: 1440px) {
   .commitment__container--title {
-    font-size: 4.5rem;
-    width: 493px;
+    text-align: unset;
+    font-size: 3rem;
   }
 }
 
@@ -327,7 +333,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 @media (min-width: 1440px) {
   .commitment__container--description {
     font-size: 1.3rem;
-    width: 41%;
+    width: 540px;
     line-height: 35px;
   }
 }
@@ -365,10 +371,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 500px;
-    width: 327px;
+    height: 767px;
+    width: 512px;
     margin: 3rem auto;
     border-radius: 10px;
+    left: 360px;
+    top: 560px;
   }
 }
 
@@ -383,6 +391,13 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   .uncompromising__container--box1 {
     width: 688px;
     height: 488px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .uncompromising__container--box1 {
+    width: 1320px;
+    height: 562px;
   }
 }
 
@@ -407,7 +422,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
 @media (min-width: 1440px) {
   .uncompromising__container--title {
-    font-size: 4.5rem;
+    padding-top: 7rem;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    text-align: unset;
     width: 493px;
   }
 }
@@ -432,8 +450,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 @media (min-width: 1440px) {
   .uncompromising__container--description {
     font-size: 1.3rem;
-    width: 41%;
+    width: 700px;
+    margin-left: 2rem;
     line-height: 35px;
+    text-align: unset;
   }
 }
 
@@ -461,6 +481,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 @media (min-width: 1440px) {
   .headquarters__container--title {
     font-size: 3rem;
+    margin-left: 6rem;
   }
 }
 
@@ -470,7 +491,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
 @media (min-width: 768px) {
   #locations__container {
-    width: 688px;
+    width: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -478,6 +499,13 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
         -ms-flex-align: baseline;
             align-items: baseline;
     margin: 1rem auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  #locations__container {
+    width: 1200px;
+    margin-left: 1rem;
   }
 }
 
