@@ -572,12 +572,27 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   list-style: none;
 }
 
-@media (max-width: 765px) {
+@media (max-width: 768px) {
   .toggle-button {
     display: flex;
   }
 
   .navbar-links {
+    flex-direction: column;
+    background-color: white;
+    width: 80%;
+    height: auto;
+    margin: 2rem auto;
+    text-align: center;
     display: none;
+  }
+
+  .navbar-links.active {
+    display: flex;
+    position: absolute;
+    margin: 0 auto;
+    top: 85px;
+    left: 10%;
+    padding-bottom: 2rem;
   }
 }

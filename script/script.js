@@ -1,6 +1,8 @@
 const productBox = document.getElementById("products__container");
 const benefitsBox = document.getElementById("benefits__container");
 const stepsBox = document.getElementById("steps__container");
+const hamburgerBtn = document.getElementsByClassName("toggle-button")[0];
+const navBarLinks = document.getElementsByClassName("navbar-links")[0];
 
 let products = [
   {
@@ -125,3 +127,7 @@ const renderSteps = (arr) => {
   stepsBox.innerHTML = steps;
 };
 renderSteps(steps);
+
+hamburgerBtn.addEventListener("click", () => {
+  navBarLinks.classList.toggle("active");
+});

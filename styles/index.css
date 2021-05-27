@@ -844,14 +844,33 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   list-style: none;
 }
 
-@media (max-width: 765px) {
+@media (max-width: 768px) {
   .toggle-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
   .navbar-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: white;
+    width: 80%;
+    height: auto;
+    margin: 2rem auto;
+    text-align: center;
     display: none;
+  }
+  .navbar-links.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    margin: 0 auto;
+    top: 85px;
+    left: 10%;
+    padding-bottom: 2rem;
   }
 }
 /*# sourceMappingURL=index.css.map */
