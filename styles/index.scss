@@ -579,7 +579,11 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
   .navbar-links {
     flex-direction: column;
-    background-color: white;
+    background: linear-gradient(
+      #fefcf7,
+      #fefcf7 55%,
+      rgba(254, 252, 247, 0.504981)
+    );
     width: 80%;
     height: auto;
     margin: 2rem auto;
@@ -587,12 +591,19 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     display: none;
   }
 
-  .navbar-links.active {
+  .navbar-links ul {
     display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-links.active {
+    display: block;
     position: absolute;
     margin: 0 auto;
     top: 85px;
     left: 10%;
     padding-bottom: 2rem;
+    font-size: 2rem;
+    height: 80vh;
   }
 }
