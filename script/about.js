@@ -1,4 +1,6 @@
 const locationBox = document.getElementById("locations__container");
+const hamburgerBtn = document.getElementsByClassName("toggle-button")[0];
+const navBarLinks = document.getElementsByClassName("navbar-links")[0];
 
 let locations = [
   {
@@ -34,3 +36,7 @@ const renderLocations = (arr) => {
   locationBox.innerHTML = locations;
 };
 renderLocations(locations);
+
+hamburgerBtn.addEventListener("click", () => {
+  navBarLinks.classList.toggle("active");
+});
