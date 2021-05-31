@@ -322,17 +322,47 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   font-family: "Fraunces", serif;
   font-weight: bold;
   width: 240px;
+  color: #848990;
+  margin-bottom: 2rem;
 }
 
 .box {
   margin-bottom: 5rem;
 }
 
-.options__container {
-  display: none;
+input[type="radio"] {
+  opacity: 0;
+}
+
+.options__container--option {
+  width: 328px;
+  height: 140px;
+  background-color: #f4f1eb;
+  margin: 2rem auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.options__container--title {
+  font-family: "Fraunces", serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.options__container--description {
+  margin-left: 1rem;
+  width: 278px;
+  line-height: 25px;
+  font-family: "Barlow", sans-serif;
+}
+
+.options__container--option:hover {
+  background-color: #fdd6ba;
 }
 
 .options__container--option.active {
-  display: block;
+  background-color: #0e8784;
 }
 /*# sourceMappingURL=plan.css.map */

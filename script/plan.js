@@ -2,6 +2,7 @@ const processBox = document.getElementById("processes__container");
 const hamburgerBtn = document.getElementsByClassName("toggle-button")[0];
 const navBarLinks = document.getElementsByClassName("navbar-links")[0];
 const arrowButton = document.getElementsByClassName("question__container--img");
+const optionBox = document.getElementsByClassName("options__container--option");
 
 let process = [
   {
@@ -45,4 +46,43 @@ hamburgerBtn.addEventListener("click", () => {
   navBarLinks.classList.toggle("active");
 });
 
-console.log(arrowButton);
+// let headers = document.getElementsByClassName("options__container--option");
+// for (i = 0; i < headers.length; i++) {
+//   headers[i].addEventListener("click", function () {
+//     let isNotActive = !this.classList.contains("active");
+//     for (const option of headers) {
+//       option.classList.remove("active");
+//     }
+
+//     if (isNotActive) {
+//       this.classList.toggle("active");
+//     }
+//   });
+// }
+
+let headers = document.getElementsByClassName("options__container--option");
+
+function getSectionId(header) {
+  return header.parentNode.parentNode.id;
+}
+
+for (i = 0; i < headers.length; i++) {
+  headers[i].addEventListener("click", function () {
+    let isNotActive = !this.classList.contains("active");
+    let sectionsId = getSectionId(this);
+
+    console.log(`sectionsId: ${sectionsId}`);
+
+    for (const header of headers) {
+      if (getSectionId(header) == sectionsId) {
+        header.classList.remove("active");
+      }
+    }
+
+    if (isNotActive) {
+      this.classList.add("active");
+    }
+  });
+}
+
+console.log(headers);

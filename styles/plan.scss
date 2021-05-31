@@ -261,6 +261,8 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     font-family: "Fraunces", serif;
     font-weight: bold;
     width: 240px;
+    color: $grey;
+    margin-bottom: 2rem;
   }
 }
 
@@ -268,10 +270,43 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   margin-bottom: 5rem;
 }
 
+input[type="radio"] {
+  opacity: 0;
+}
+
 .options__container {
-  display: none;
+  &--option {
+    width: 328px;
+    height: 140px;
+    background-color: $bigselection-default;
+    margin: 2rem auto;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &--title {
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  &--description {
+    margin-left: 1rem;
+    width: 278px;
+    line-height: 25px;
+    font-family: "Barlow", sans-serif;
+  }
+}
+
+.options__container--option:hover {
+  background-color: $bigselection-hover;
 }
 
 .options__container--option.active {
-  display: block;
+  background-color: $bigselection-active;
 }
+
+// .options__container--option.active {
+//   display: block;
+// }
