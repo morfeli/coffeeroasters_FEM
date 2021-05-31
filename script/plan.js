@@ -1,4 +1,7 @@
 const processBox = document.getElementById("processes__container");
+const hamburgerBtn = document.getElementsByClassName("toggle-button")[0];
+const navBarLinks = document.getElementsByClassName("navbar-links")[0];
+const arrowButton = document.getElementsByClassName("question__container--img");
 
 let process = [
   {
@@ -37,3 +40,9 @@ const renderProcess = (arr) => {
   processBox.innerHTML = processes;
 };
 renderProcess(process);
+
+hamburgerBtn.addEventListener("click", () => {
+  navBarLinks.classList.toggle("active");
+});
+
+console.log(arrowButton);

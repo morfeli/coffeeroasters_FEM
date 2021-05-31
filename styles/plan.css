@@ -271,7 +271,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   width: 375px;
   height: 1028px;
   border-radius: 10px;
-  margin-top: 10rem;
+  margin: 5rem auto;
 }
 
 .steps__container {
@@ -302,5 +302,37 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   width: 327px;
   margin: 0 auto;
   line-height: 25px;
+}
+
+.question__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+  width: 375px;
+}
+
+.question__container--title {
+  font-size: 1.7rem;
+  font-family: "Fraunces", serif;
+  font-weight: bold;
+  width: 240px;
+}
+
+.box {
+  margin-bottom: 5rem;
+}
+
+.options__container {
+  display: none;
+}
+
+.options__container--option.active {
+  display: block;
 }
 /*# sourceMappingURL=plan.css.map */
