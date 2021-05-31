@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "partial";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar-item {
+  text-decoration: none;
+  display: block;
+  margin-right: 0.5rem;
+  padding: 0.8rem;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  color: $grey;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+  margin-top: 2rem;
+}
+
+input[type="checkbox"] {
+  display: none;
+  visibility: hidden;
+}
+
+.middle {
+  height: 3px;
+  width: 1.875rem;
+  background-color: black;
+  border-radius: 3.125rem;
+  position: absolute;
+  transition: 0.3s ease;
+}
+
+.top {
+  bottom: 5px;
+  height: 3px;
+  width: 1.875rem;
+  background-color: black;
+  border-radius: 3.125rem;
+  position: absolute;
+  transition: 0.3s ease;
+}
+
+.bottom {
+  top: 10px;
+  height: 3px;
+  width: 1.875rem;
+  background-color: black;
+  border-radius: 3.125rem;
+  position: absolute;
+  transition: 0.3s ease;
+}
+
+input[type="checkbox"]:checked ~ .toggle-button .top {
+  transform: rotate(-50deg);
+  width: 1.56rem;
+  transform-origin: right;
+  top: -10px;
+}
+
+input[type="checkbox"]:checked ~ .toggle-button .bottom {
+  transform: rotate(50deg);
+  width: 1.56rem;
+  transform-origin: right;
+  top: 10px;
+}
+
+input[type="checkbox"]:checked ~ .toggle-button .middle {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    background: linear-gradient(
+      #fefcf7,
+      #fefcf7 55%,
+      rgba(254, 252, 247, 0.504981)
+    );
+    width: 80%;
+    height: auto;
+    margin: 2rem auto;
+    text-align: center;
+    display: none;
+  }
+
+  .navbar-links ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-links.active {
+    display: block;
+    position: absolute;
+    margin: 0 auto;
+    top: 85px;
+    left: 10%;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    height: 80vh;
+  }
+}
+
+.hero__container {
+  background-image: url("../assets/plan/mobile/image-hero-blackcup.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 327px;
+  margin: 3rem auto;
+  border-radius: 10px;
+
+  @include tablet {
+    background-image: url("../assets/plan/tablet/image-hero-blackcup.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 689px;
+    margin: 3rem auto;
+    border-radius: 10px;
+    @include desktop {
+      background-image: url("../assets/plan/desktop/image-hero-blackcup.jpg");
+      width: 1280px;
+      height: 450px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &--title {
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding-top: 6rem;
+    text-align: center;
+    color: $white-text;
+    @include tablet {
+      width: 60%;
+      font-size: 3.5rem;
+      text-align: left;
+      margin-left: 2rem;
+    }
+    @include desktop {
+      font-size: 4.5rem;
+      width: 493px;
+    }
+  }
+
+  &--description {
+    font-family: "Barlow", sans-serif;
+    color: $white-text;
+    padding-top: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 25px;
+    width: 279px;
+    font-size: 15px;
+    @include tablet {
+      width: 64%;
+      float: left;
+      margin-left: 2rem;
+      line-height: 25px;
+      text-align: left;
+    }
+    @include desktop {
+      font-size: 1.3rem;
+      width: 41%;
+      line-height: 35px;
+    }
+  }
+}

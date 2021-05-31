@@ -16,6 +16,8 @@
       -ms-flex-align: center;
           align-items: center;
   padding-top: 2rem;
+  width: 90vw;
+  margin: 0 auto;
 }
 
 .navbar-links {
