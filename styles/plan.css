@@ -265,4 +265,42 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     line-height: 35px;
   }
 }
+
+.process__container {
+  background-color: #343e4c;
+  width: 375px;
+  height: 1028px;
+  border-radius: 10px;
+  margin-top: 10rem;
+}
+
+.steps__container {
+  padding-top: 3rem;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.steps__container--number {
+  font-size: 3rem;
+  font-family: "Fraunces", serif;
+  font-weight: bold;
+  color: #fdd6ba;
+  margin-bottom: 1rem;
+}
+
+.steps__container--title {
+  font-size: 2rem;
+  font-family: "Fraunces", serif;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #fefcf7;
+}
+
+.steps__container--description {
+  font-family: "Barlow", sans-serif;
+  color: #fefcf7;
+  width: 327px;
+  margin: 0 auto;
+  line-height: 25px;
+}
 /*# sourceMappingURL=plan.css.map */

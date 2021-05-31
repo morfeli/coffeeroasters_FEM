@@ -214,3 +214,38 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     }
   }
 }
+
+.process__container {
+  background-color: $darkgreyblue;
+  width: 375px;
+  height: 1028px;
+  border-radius: 10px;
+  margin-top: 10rem;
+}
+
+.steps__container {
+  padding-top: 3rem;
+  margin: 3rem auto;
+  text-align: center;
+  &--number {
+    font-size: 3rem;
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    color: $paleorange;
+    margin-bottom: 1rem;
+  }
+  &--title {
+    font-size: 2rem;
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: $white-text;
+  }
+  &--description {
+    font-family: "Barlow", sans-serif;
+    color: $white-text;
+    width: 327px;
+    margin: 0 auto;
+    line-height: 25px;
+  }
+}
