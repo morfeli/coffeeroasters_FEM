@@ -879,10 +879,11 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     position: absolute;
     margin: 0 auto;
     top: 85px;
-    left: 10%;
+    left: 0%;
     padding-bottom: 2rem;
     font-size: 2rem;
     height: 80vh;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=index.css.map */
