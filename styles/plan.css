@@ -315,6 +315,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       justify-content: space-around;
   margin: 0 auto;
   width: 375px;
+  cursor: pointer;
 }
 
 .question__container--title {
@@ -332,6 +333,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
 input[type="radio"] {
   opacity: 0;
+}
+
+.options__container {
+  display: none;
 }
 
 .options__container--option {
@@ -356,6 +361,10 @@ input[type="radio"] {
   width: 278px;
   line-height: 25px;
   font-family: "Barlow", sans-serif;
+}
+
+.options__container.open {
+  display: block;
 }
 
 .options__container--option:hover {

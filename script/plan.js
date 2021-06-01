@@ -2,7 +2,7 @@ const processBox = document.getElementById("processes__container");
 const hamburgerBtn = document.getElementsByClassName("toggle-button")[0];
 const navBarLinks = document.getElementsByClassName("navbar-links")[0];
 const arrowButton = document.getElementsByClassName("question__container--img");
-const optionBox = document.getElementsByClassName("options__container--option");
+// const questionBox = document.getElementsByClassName("question__container");
 
 let process = [
   {
@@ -85,4 +85,12 @@ for (i = 0; i < headers.length; i++) {
   });
 }
 
-console.log(headers);
+const questionBox = document.getElementsByClassName("question__container");
+[...questionBox].forEach((el) =>
+  el.addEventListener("click", (event) => {
+    const subMenu = event.target.parentElement.parentElement.querySelector(
+      ".options__container"
+    );
+    subMenu.classList.toggle("open");
+  })
+);

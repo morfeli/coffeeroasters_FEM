@@ -256,6 +256,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   justify-content: space-around;
   margin: 0 auto;
   width: 375px;
+  cursor: pointer;
   &--title {
     font-size: 1.7rem;
     font-family: "Fraunces", serif;
@@ -275,6 +276,7 @@ input[type="radio"] {
 }
 
 .options__container {
+  display: none;
   &--option {
     width: 328px;
     height: 140px;
@@ -297,6 +299,9 @@ input[type="radio"] {
     line-height: 25px;
     font-family: "Barlow", sans-serif;
   }
+}
+.options__container.open {
+  display: block;
 }
 
 .options__container--option:hover {
