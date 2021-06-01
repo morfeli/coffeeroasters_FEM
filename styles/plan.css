@@ -375,6 +375,37 @@ input[type="radio"] {
   background-color: #0e8784;
 }
 
+.summary__container {
+  width: 328px;
+  height: 450px;
+  background-color: #343e4c;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.summary__container--title {
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  color: #848990;
+  padding-top: 2rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.summary__container--description {
+  color: #fefcf7;
+  font-family: "Fraunces", serif;
+  font-weight: bold;
+  font-size: 24px;
+  width: 310px;
+  margin: 0 auto;
+  line-height: 3rem;
+}
+
+.summary__container--text {
+  color: #0e8684;
+}
+
 .footer__container {
   height: 418px;
   width: 327px;

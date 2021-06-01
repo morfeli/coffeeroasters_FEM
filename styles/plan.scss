@@ -316,6 +316,34 @@ input[type="radio"] {
 //   display: block;
 // }
 
+.summary__container {
+  width: 328px;
+  height: 450px;
+  background-color: $darkgreyblue;
+  margin: 0 auto;
+  border-radius: 10px;
+  &--title {
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
+    color: $grey;
+    padding-top: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  &--description {
+    color: $white-text;
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    font-size: 24px;
+    width: 310px;
+    margin: 0 auto;
+    line-height: 3rem;
+  }
+  &--text {
+    color: $darkcyan;
+  }
+}
+
 .footer__container {
   height: 418px;
   width: 327px;
