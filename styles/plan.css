@@ -381,6 +381,7 @@ input[type="radio"] {
   background-color: #343e4c;
   margin: 0 auto;
   border-radius: 10px;
+  margin-bottom: 3rem;
 }
 
 .summary__container--title {
@@ -396,14 +397,31 @@ input[type="radio"] {
   color: #fefcf7;
   font-family: "Fraunces", serif;
   font-weight: bold;
-  font-size: 24px;
-  width: 310px;
-  margin: 0 auto;
-  line-height: 3rem;
+  font-size: 25px;
+  width: 260px;
+  margin-left: 1rem;
+  line-height: 4rem;
 }
 
 .summary__container--text {
   color: #0e8684;
+}
+
+.button__container {
+  text-align: center;
+  margin-bottom: 7rem;
+}
+
+.button__container--btn {
+  width: 217px;
+  height: 56px;
+  background-color: #0e8684;
+  color: white;
+  font-family: "Fraunces", serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
 }
 
 .footer__container {

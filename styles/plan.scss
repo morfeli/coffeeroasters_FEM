@@ -322,6 +322,7 @@ input[type="radio"] {
   background-color: $darkgreyblue;
   margin: 0 auto;
   border-radius: 10px;
+  margin-bottom: 3rem;
   &--title {
     font-family: "Barlow", sans-serif;
     font-weight: 300;
@@ -334,13 +335,29 @@ input[type="radio"] {
     color: $white-text;
     font-family: "Fraunces", serif;
     font-weight: bold;
-    font-size: 24px;
-    width: 310px;
-    margin: 0 auto;
-    line-height: 3rem;
+    font-size: 25px;
+    width: 260px;
+    margin-left: 1rem;
+    line-height: 4rem;
   }
   &--text {
     color: $darkcyan;
+  }
+}
+
+.button__container {
+  text-align: center;
+  margin-bottom: 7rem;
+  &--btn {
+    width: 217px;
+    height: 56px;
+    background-color: $darkcyan;
+    color: white;
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
   }
 }
 
