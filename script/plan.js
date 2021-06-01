@@ -2,7 +2,11 @@ const processBox = document.getElementById("processes__container");
 const hamburgerBtn = document.getElementsByClassName("toggle-button")[0];
 const navBarLinks = document.getElementsByClassName("navbar-links")[0];
 const arrowButton = document.getElementsByClassName("question__container--img");
-// const questionBox = document.getElementsByClassName("question__container");
+let headers = document.getElementsByClassName("options__container--option");
+
+hamburgerBtn.addEventListener("click", () => {
+  navBarLinks.classList.toggle("active");
+});
 
 let process = [
   {
@@ -41,26 +45,6 @@ const renderProcess = (arr) => {
   processBox.innerHTML = processes;
 };
 renderProcess(process);
-
-hamburgerBtn.addEventListener("click", () => {
-  navBarLinks.classList.toggle("active");
-});
-
-// let headers = document.getElementsByClassName("options__container--option");
-// for (i = 0; i < headers.length; i++) {
-//   headers[i].addEventListener("click", function () {
-//     let isNotActive = !this.classList.contains("active");
-//     for (const option of headers) {
-//       option.classList.remove("active");
-//     }
-
-//     if (isNotActive) {
-//       this.classList.toggle("active");
-//     }
-//   });
-// }
-
-let headers = document.getElementsByClassName("options__container--option");
 
 function getSectionId(header) {
   return header.parentNode.parentNode.id;

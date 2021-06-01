@@ -315,3 +315,58 @@ input[type="radio"] {
 // .options__container--option.active {
 //   display: block;
 // }
+
+.footer__container {
+  height: 418px;
+  width: 327px;
+  margin: 2rem auto;
+  background-color: $darkgreyblue;
+  @include tablet {
+    width: 688px;
+    height: 270px;
+  }
+  @include desktop {
+    width: 1280px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 8rem;
+    @include tablet {
+      padding-top: unset;
+    }
+    @include desktop {
+      padding-top: unset;
+    }
+  }
+
+  &--icons {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto;
+    cursor: pointer;
+  }
+}
+
+.footer__container--links ul {
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+  }
+  @include desktop {
+    margin-top: unset;
+  }
+}
+
+.parent {
+  list-style: none;
+}
