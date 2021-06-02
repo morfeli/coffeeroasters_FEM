@@ -4,10 +4,25 @@ const navBarLinks = document.getElementsByClassName("navbar-links")[0];
 const arrowButton = document.getElementsByClassName("question__container--img");
 let headers = document.getElementsByClassName("options__container--option");
 
+const options = document.getElementsByClassName("options__container");
+const preferences = document.getElementsByName("preferences");
+const beanType = document.getElementsByName("beanType");
+const quantity = document.getElementsByName("quantity");
+const grind = document.getElementsByName("grindType");
+const deliveries = document.getElementsByName("deliveryType");
+
+const dataPreference = document.querySelector(".jsPreference");
+const dataBean = document.querySelector(".jsBean");
+const dataQuantity = document.querySelector(".jsQuantity");
+const dataGrind = document.querySelector(".jsGrind");
+const dataDelivery = document.querySelector(".jsDelivery");
+const coffeePrice = document.querySelectorAll("[data-price]");
+
 hamburgerBtn.addEventListener("click", () => {
   navBarLinks.classList.toggle("active");
 });
 
+//
 let process = [
   {
     number: "01",
@@ -45,7 +60,9 @@ const renderProcess = (arr) => {
   processBox.innerHTML = processes;
 };
 renderProcess(process);
+//
 
+//
 function getSectionId(header) {
   return header.parentNode.parentNode.id;
 }
@@ -68,7 +85,9 @@ for (i = 0; i < headers.length; i++) {
     }
   });
 }
+//
 
+//
 const questionBox = document.getElementsByClassName("question__container");
 [...questionBox].forEach((el) =>
   el.addEventListener("click", (event) => {
@@ -78,3 +97,38 @@ const questionBox = document.getElementsByClassName("question__container");
     subMenu.classList.toggle("open");
   })
 );
+//
+
+//
+function loopOptionDivs() {
+  for (let i = 0; i < options.length; i++) {
+    options[i].addEventListener("click", (e) => {
+      const target = e.target;
+
+      if (target.type === "radio") {
+        callLoopRadioBtns();
+      }
+    });
+  }
+}
+loopOptionDivs();
+
+function loopRadioBtns(arr, spanEl) {
+  for (let i = 0; i < arr.length; i++) {
+    const element = arr[i];
+
+    if (element.checked) {
+      spanEl.textContent = element.value;
+    }
+  }
+}
+
+function callLoopRadioBtns() {
+  loopRadioBtns(preferences, dataPreference);
+  loopRadioBtns(beanType, dataBean);
+  loopRadioBtns(quantity, dataQuantity);
+  loopRadioBtns(grind, dataGrind);
+  loopRadioBtns(deliveries, dataDelivery);
+}
+callLoopRadioBtns();
+//
