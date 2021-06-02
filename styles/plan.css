@@ -301,6 +301,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     width: 238px;
     text-align: left;
     margin-top: 7rem;
+    margin-left: 1.5rem;
   }
 }
 
@@ -530,6 +531,16 @@ input[type="radio"] {
   .footer__container {
     width: 688px;
     height: 270px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
@@ -585,6 +596,11 @@ input[type="radio"] {
   cursor: pointer;
 }
 
+.footer__container--svg {
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
 @media (min-width: 768px) {
   .footer__container--links ul {
     display: -webkit-box;
@@ -596,7 +612,6 @@ input[type="radio"] {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 6rem;
   }
 }
 

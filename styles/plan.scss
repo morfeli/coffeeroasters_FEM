@@ -242,6 +242,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     width: 238px;
     text-align: left;
     margin-top: 7rem;
+    margin-left: 1.5rem;
   }
 
   &--number {
@@ -419,6 +420,9 @@ input[type="radio"] {
   @include tablet {
     width: 688px;
     height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
   }
   @include desktop {
     width: 1280px;
@@ -448,6 +452,10 @@ input[type="radio"] {
     margin: 2rem auto;
     cursor: pointer;
   }
+  &--svg {
+    margin: 0 auto;
+    padding-top: 20px;
+  }
 }
 
 .footer__container--links ul {
@@ -455,7 +463,6 @@ input[type="radio"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 6rem;
   }
   @include desktop {
     margin-top: unset;
