@@ -216,24 +216,43 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   }
 }
 
+#processes__container {
+  @include tablet {
+    display: flex;
+  }
+}
+
 .process__container {
   background-color: $darkgreyblue;
   width: 375px;
   height: 1028px;
   border-radius: 10px;
   margin: 5rem auto;
+  @include tablet {
+    width: 768px;
+    height: 640px;
+  }
 }
 
 .steps__container {
   padding-top: 3rem;
   margin: 3rem auto;
   text-align: center;
+  @include tablet {
+    width: 238px;
+    text-align: left;
+    margin-top: 7rem;
+  }
+
   &--number {
     font-size: 3rem;
     font-family: "Fraunces", serif;
     font-weight: bold;
     color: $paleorange;
     margin-bottom: 1rem;
+    @include tablet {
+      font-size: 4rem;
+    }
   }
   &--title {
     font-size: 2rem;
@@ -248,6 +267,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     width: 327px;
     margin: 0 auto;
     line-height: 25px;
+    @include tablet {
+      width: 223px;
+      margin: unset;
+    }
   }
 }
 
@@ -258,6 +281,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   margin: 0 auto;
   width: 375px;
   cursor: pointer;
+  @include tablet {
+    width: 689px;
+    justify-content: space-between;
+  }
   &--title {
     font-size: 1.7rem;
     font-family: "Fraunces", serif;
@@ -265,6 +292,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     width: 240px;
     color: $grey;
     margin-bottom: 2rem;
+    @include tablet {
+      width: unset;
+    }
   }
 }
 
@@ -273,7 +303,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 }
 
 input[type="radio"] {
-  //   opacity: 0;
+  opacity: 0;
 }
 
 .options__container {
@@ -285,6 +315,10 @@ input[type="radio"] {
     margin: 2rem auto;
     border-radius: 5px;
     cursor: pointer;
+    @include tablet {
+      width: 223px;
+      height: 250px;
+    }
   }
 
   &--title {
@@ -303,6 +337,9 @@ input[type="radio"] {
 }
 .options__container.open {
   display: block;
+  @include tablet {
+    display: flex;
+  }
 }
 
 .options__container--option:hover {

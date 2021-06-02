@@ -267,6 +267,14 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   }
 }
 
+@media (min-width: 768px) {
+  #processes__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .process__container {
   background-color: #343e4c;
   width: 375px;
@@ -275,10 +283,25 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   margin: 5rem auto;
 }
 
+@media (min-width: 768px) {
+  .process__container {
+    width: 768px;
+    height: 640px;
+  }
+}
+
 .steps__container {
   padding-top: 3rem;
   margin: 3rem auto;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .steps__container {
+    width: 238px;
+    text-align: left;
+    margin-top: 7rem;
+  }
 }
 
 .steps__container--number {
@@ -287,6 +310,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   font-weight: bold;
   color: #fdd6ba;
   margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .steps__container--number {
+    font-size: 4rem;
+  }
 }
 
 .steps__container--title {
@@ -305,6 +334,13 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   line-height: 25px;
 }
 
+@media (min-width: 768px) {
+  .steps__container--description {
+    width: 223px;
+    margin: unset;
+  }
+}
+
 .question__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -319,6 +355,15 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   cursor: pointer;
 }
 
+@media (min-width: 768px) {
+  .question__container {
+    width: 689px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .question__container--title {
   font-size: 1.7rem;
   font-family: "Fraunces", serif;
@@ -328,8 +373,18 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   margin-bottom: 2rem;
 }
 
+@media (min-width: 768px) {
+  .question__container--title {
+    width: unset;
+  }
+}
+
 .box {
   margin-bottom: 5rem;
+}
+
+input[type="radio"] {
+  opacity: 0;
 }
 
 .options__container {
@@ -343,6 +398,13 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   margin: 2rem auto;
   border-radius: 5px;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .options__container--option {
+    width: 223px;
+    height: 250px;
+  }
 }
 
 .options__container--title {
@@ -362,6 +424,14 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
 .options__container.open {
   display: block;
+}
+
+@media (min-width: 768px) {
+  .options__container.open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .options__container--option:hover {
