@@ -273,7 +273,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 }
 
 input[type="radio"] {
-  opacity: 0;
+  //   opacity: 0;
 }
 
 .options__container {
@@ -312,10 +312,6 @@ input[type="radio"] {
 .options__container--option.active {
   background-color: $bigselection-active;
 }
-
-// .options__container--option.active {
-//   display: block;
-// }
 
 .summary__container {
   width: 328px;
