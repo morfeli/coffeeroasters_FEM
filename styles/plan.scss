@@ -232,6 +232,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     width: 768px;
     height: 640px;
   }
+  @include desktop {
+    width: 1280px;
+    height: 653px;
+  }
 }
 
 .steps__container {
@@ -243,6 +247,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     text-align: left;
     margin-top: 7rem;
     margin-left: 1.5rem;
+  }
+  @include desktop {
+    margin-left: 5rem;
   }
 
   &--number {
@@ -277,7 +284,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 
 .question__container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-around;
   margin: 0 auto;
   width: 375px;
@@ -409,6 +416,9 @@ input[type="radio"] {
     font-size: 1.2rem;
     border: none;
     border-radius: 5px;
+    @include desktop {
+      float: right;
+    }
   }
 }
 
@@ -471,4 +481,36 @@ input[type="radio"] {
 
 .parent {
   list-style: none;
+}
+
+.desktop__viewOnly {
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: block;
+    width: 255px;
+    height: 356px;
+  }
+}
+
+.desktop__container {
+  @include desktop {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.aside__nav {
+  &--link {
+    text-decoration: none;
+    list-style: none;
+  }
+  &--a {
+    text-decoration: none;
+    list-style: none;
+  }
 }
