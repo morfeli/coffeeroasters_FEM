@@ -365,6 +365,10 @@ input[type="radio"] {
   margin: 0 auto;
   border-radius: 10px;
   margin-bottom: 3rem;
+  @include tablet {
+    width: 689px;
+    height: 208px;
+  }
   &--title {
     font-family: "Barlow", sans-serif;
     font-weight: 300;
@@ -381,6 +385,10 @@ input[type="radio"] {
     width: 260px;
     margin-left: 1rem;
     line-height: 4rem;
+    @include tablet {
+      width: 602px;
+      height: 154px;
+    }
   }
   &--text {
     color: $darkcyan;

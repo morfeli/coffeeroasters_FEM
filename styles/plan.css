@@ -465,6 +465,13 @@ input[type="radio"] {
   margin-bottom: 3rem;
 }
 
+@media (min-width: 768px) {
+  .summary__container {
+    width: 689px;
+    height: 208px;
+  }
+}
+
 .summary__container--title {
   font-family: "Barlow", sans-serif;
   font-weight: 300;
@@ -482,6 +489,13 @@ input[type="radio"] {
   width: 260px;
   margin-left: 1rem;
   line-height: 4rem;
+}
+
+@media (min-width: 768px) {
+  .summary__container--description {
+    width: 602px;
+    height: 154px;
+  }
 }
 
 .summary__container--text {
