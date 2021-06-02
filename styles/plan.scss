@@ -327,12 +327,20 @@ input[type="radio"] {
     font-size: 24px;
     margin-left: 1rem;
     margin-bottom: 1rem;
+    @include tablet {
+      margin-top: 1.3rem;
+      margin-left: 1.2rem;
+    }
   }
   &--description {
     margin-left: 1rem;
     width: 278px;
     line-height: 25px;
     font-family: "Barlow", sans-serif;
+    @include tablet {
+      width: 172px;
+      margin-left: 1.2rem;
+    }
   }
 }
 .options__container.open {

@@ -415,11 +415,25 @@ input[type="radio"] {
   margin-bottom: 1rem;
 }
 
+@media (min-width: 768px) {
+  .options__container--title {
+    margin-top: 1.3rem;
+    margin-left: 1.2rem;
+  }
+}
+
 .options__container--description {
   margin-left: 1rem;
   width: 278px;
   line-height: 25px;
   font-family: "Barlow", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .options__container--description {
+    width: 172px;
+    margin-left: 1.2rem;
+  }
 }
 
 .options__container.open {
