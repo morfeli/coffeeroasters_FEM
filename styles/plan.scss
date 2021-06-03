@@ -245,7 +245,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   @include tablet {
     width: 238px;
     text-align: left;
-    margin-top: 7rem;
+    // margin-top: 7rem;
     margin-left: 1.5rem;
   }
   @include desktop {
@@ -375,7 +375,11 @@ input[type="radio"] {
   margin-bottom: 3rem;
   @include tablet {
     width: 689px;
-    height: 208px;
+    height: 260px;
+  }
+  @include desktop {
+    width: 730px;
+    height: 260px;
   }
   &--title {
     font-family: "Barlow", sans-serif;
@@ -397,15 +401,25 @@ input[type="radio"] {
       width: 602px;
       height: 154px;
     }
+    @include desktop {
+      width: 602px;
+      height: 80px;
+    }
   }
   &--text {
     color: $darkcyan;
+  }
+  &--orderBox {
+    margin-left: 2rem;
   }
 }
 
 .button__container {
   text-align: center;
   margin-bottom: 7rem;
+  @include desktop {
+    margin-bottom: 15rem;
+  }
   &--btn {
     width: 217px;
     height: 56px;
@@ -508,9 +522,90 @@ input[type="radio"] {
   &--link {
     text-decoration: none;
     list-style: none;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
   }
   &--a {
     text-decoration: none;
     list-style: none;
+    margin-top: 1rem;
+  }
+  &--number {
+    margin-right: 1rem;
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: $darkcyan;
+  }
+  &--text {
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: $grey;
+  }
+}
+
+hr {
+  margin-bottom: 1rem;
+}
+
+.circle1,
+.circle2,
+.circle3 {
+  height: 31px;
+  width: 31px;
+  border-radius: 50%;
+  border: 1px solid #0e8784;
+  background-color: transparent;
+}
+
+.line {
+  @include tablet {
+    border-top: 2px solid #fdd6ba;
+    width: 515px;
+    margin-left: 2.8rem;
+    position: relative;
+    top: 95px;
+  }
+  @include desktop {
+    margin-left: 6rem;
+    width: 860px;
+  }
+}
+
+.process__line {
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    display: flex;
+    padding-top: 5rem;
+  }
+}
+
+.circle1 {
+  @include tablet {
+    margin-left: 2rem;
+  }
+  @include desktop {
+    margin-left: 5rem;
+  }
+}
+
+.circle2 {
+  @include tablet {
+    margin-left: 14rem;
+  }
+  @include desktop {
+    margin-left: 25rem;
+  }
+}
+
+.circle3 {
+  @include tablet {
+    margin-left: 14rem;
+  }
+  @include desktop {
+    margin-left: 25rem;
   }
 }
