@@ -473,6 +473,12 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     align-items: center;
   }
 
+  &--heading {
+    @include desktop {
+      margin-left: 2rem;
+    }
+  }
+
   &--links {
     display: flex;
     flex-direction: column;
@@ -483,6 +489,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     }
     @include desktop {
       padding-top: unset;
+      margin-left: 8rem;
     }
   }
 
@@ -492,6 +499,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     justify-content: space-between;
     margin: 2rem auto;
     cursor: pointer;
+    @include desktop {
+      margin-right: 3rem;
+    }
   }
 }
 

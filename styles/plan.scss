@@ -430,6 +430,7 @@ input[type="radio"] {
     font-size: 1.2rem;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
     @include desktop {
       float: right;
     }
@@ -444,9 +445,6 @@ input[type="radio"] {
   @include tablet {
     width: 688px;
     height: 270px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
   }
   @include desktop {
     width: 1280px;
@@ -454,6 +452,12 @@ input[type="radio"] {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &--heading {
+    @include desktop {
+      margin-left: 2rem;
+    }
   }
 
   &--links {
@@ -466,6 +470,7 @@ input[type="radio"] {
     }
     @include desktop {
       padding-top: unset;
+      margin-left: 8rem;
     }
   }
 
@@ -473,12 +478,11 @@ input[type="radio"] {
     width: 120px;
     display: flex;
     justify-content: space-between;
-    margin: 2rem auto;
     cursor: pointer;
-  }
-  &--svg {
-    margin: 0 auto;
-    padding-top: 20px;
+    margin: 2rem auto;
+    @include desktop {
+      margin-right: 3rem;
+    }
   }
 }
 
@@ -487,6 +491,7 @@ input[type="radio"] {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 6rem;
   }
   @include desktop {
     margin-top: unset;
