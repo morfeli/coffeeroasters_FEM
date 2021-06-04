@@ -62,29 +62,29 @@ const renderProcess = (arr) => {
 renderProcess(process);
 //
 
-//
-function getSectionId(header) {
-  return header.parentNode.parentNode.id;
-}
+// //
+// function getSectionId(header) {
+//   return header.parentNode.parentNode.id;
+// }
 
-for (i = 0; i < headers.length; i++) {
-  headers[i].addEventListener("click", function () {
-    let isNotActive = !this.classList.contains("active");
-    let sectionsId = getSectionId(this);
+// for (i = 0; i < headers.length; i++) {
+//   headers[i].addEventListener("click", function () {
+//     let isNotActive = !this.classList.contains("active");
+//     let sectionsId = getSectionId(this);
 
-    console.log(`sectionsId: ${sectionsId}`);
+//     console.log(`sectionsId: ${sectionsId}`);
 
-    for (const header of headers) {
-      if (getSectionId(header) == sectionsId) {
-        header.classList.remove("active");
-      }
-    }
+//     for (const header of headers) {
+//       if (getSectionId(header) == sectionsId) {
+//         header.classList.remove("active");
+//       }
+//     }
 
-    if (isNotActive) {
-      this.classList.add("active");
-    }
-  });
-}
+//     if (isNotActive) {
+//       this.classList.add("active");
+//     }
+//   });
+// }
 //
 
 const questionBox = document.getElementsByClassName("question__container");

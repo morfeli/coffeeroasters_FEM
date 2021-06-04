@@ -288,7 +288,6 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   justify-content: space-around;
   margin: 0 auto;
   width: 375px;
-  cursor: pointer;
   @include tablet {
     width: 689px;
     justify-content: space-between;
@@ -300,9 +299,13 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     width: 240px;
     color: $grey;
     margin-bottom: 2rem;
+    cursor: pointer;
     @include tablet {
       width: unset;
     }
+  }
+  &--img {
+    cursor: pointer;
   }
 }
 

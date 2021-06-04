@@ -365,7 +365,6 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       justify-content: space-around;
   margin: 0 auto;
   width: 375px;
-  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -384,12 +383,17 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   width: 240px;
   color: #848990;
   margin-bottom: 2rem;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
   .question__container--title {
     width: unset;
   }
+}
+
+.question__container--img {
+  cursor: pointer;
 }
 
 .box {
