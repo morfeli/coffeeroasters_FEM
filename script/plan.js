@@ -87,17 +87,17 @@ for (i = 0; i < headers.length; i++) {
 }
 //
 
-//
 const questionBox = document.getElementsByClassName("question__container");
-[...questionBox].forEach((el) =>
+[...questionBox].forEach((el) => {
+  const arrow = el.querySelector(".question__container--img");
   el.addEventListener("click", (event) => {
     const subMenu = event.target.parentElement.parentElement.querySelector(
       ".options__container"
     );
     subMenu.classList.toggle("open");
-  })
-);
-//
+    arrow.classList.toggle("rotate");
+  });
+});
 
 //
 function loopOptionDivs() {

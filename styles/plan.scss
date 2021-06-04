@@ -357,6 +357,9 @@ input[type="radio"] {
     display: flex;
   }
 }
+.question__container--img.rotate {
+  transform: rotate(180deg);
+}
 
 .options__container--option:hover {
   background-color: $bigselection-hover;
@@ -613,4 +616,8 @@ hr {
   @include desktop {
     margin-left: 25rem;
   }
+}
+
+.question__container--img.rotate {
+  transform: rotate(180deg);
 }

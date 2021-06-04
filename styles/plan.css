@@ -461,6 +461,11 @@ input[type="radio"] {
   }
 }
 
+.question__container--img.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .options__container--option:hover {
   background-color: #fdd6ba;
 }
@@ -805,5 +810,10 @@ hr {
   .circle3 {
     margin-left: 25rem;
   }
+}
+
+.question__container--img.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 /*# sourceMappingURL=plan.css.map */
