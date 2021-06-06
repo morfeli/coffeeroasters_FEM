@@ -404,6 +404,14 @@ input[type="radio"] {
   opacity: 0;
 }
 
+input[type="radio"]:checked + label {
+  background-color: #0e8784;
+}
+
+label {
+  cursor: pointer;
+}
+
 .options__container {
   display: none;
 }

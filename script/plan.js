@@ -3,6 +3,7 @@ const hamburgerBtn = document.getElementsByClassName("toggle-button")[0];
 const navBarLinks = document.getElementsByClassName("navbar-links")[0];
 const arrowButton = document.getElementsByClassName("question__container--img");
 let headers = document.getElementsByClassName("options__container--option");
+let radios = document.getElementsByClassName("radios");
 
 const options = document.getElementsByClassName("options__container");
 const preferences = document.getElementsByName("preferences");
@@ -62,30 +63,17 @@ const renderProcess = (arr) => {
 renderProcess(process);
 //
 
-// //
-// function getSectionId(header) {
-//   return header.parentNode.parentNode.id;
-// }
-
-// for (i = 0; i < headers.length; i++) {
-//   headers[i].addEventListener("click", function () {
-//     let isNotActive = !this.classList.contains("active");
-//     let sectionsId = getSectionId(this);
-
-//     console.log(`sectionsId: ${sectionsId}`);
-
-//     for (const header of headers) {
-//       if (getSectionId(header) == sectionsId) {
-//         header.classList.remove("active");
-//       }
-//     }
-
-//     if (isNotActive) {
-//       this.classList.add("active");
-//     }
-//   });
-// }
-//
+document.querySelectorAll("input[type=radio]").forEach((elem) => {
+  elem.addEventListener("click", addChecked);
+});
+function addChecked() {
+  document.querySelectorAll("input[type=radio]").forEach((elem) => {
+    elem.removeAttribute("checked");
+  });
+  document
+    .querySelectorAll("input[type=radio]:checked")[0]
+    .setAttribute("checked", "true");
+}
 
 const questionBox = document.getElementsByClassName("question__container");
 [...questionBox].forEach((el) => {
