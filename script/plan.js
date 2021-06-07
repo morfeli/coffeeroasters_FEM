@@ -175,3 +175,27 @@ espresso.addEventListener("click", () => {
     test[3].classList.remove("disable");
   }
 });
+
+small.addEventListener("click", () => {
+  if (small.checked) {
+    document.getElementById("price1").innerHTML = "$7.20";
+    document.getElementById("price2").innerHTML = "$9.60";
+    document.getElementById("price3").innerHTML = "$12.00";
+  }
+});
+
+medium.addEventListener("click", () => {
+  if (medium.checked) {
+    document.getElementById("price1").innerHTML = "$13.00";
+    document.getElementById("price2").innerHTML = "$17.50";
+    document.getElementById("price3").innerHTML = "$22.00";
+  }
+});
+
+large.addEventListener("click", () => {
+  if (large.checked) {
+    document.getElementById("price1").innerHTML = "$22.00";
+    document.getElementById("price2").innerHTML = "$32.00";
+    document.getElementById("price3").innerHTML = "$42.00";
+  }
+});
