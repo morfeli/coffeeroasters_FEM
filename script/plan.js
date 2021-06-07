@@ -146,6 +146,7 @@ capsule.addEventListener("click", () => {
     document.getElementById("as/using").innerHTML = "using";
   }
   if (capsule.checked) {
+    document.querySelector(".is-hidden").classList.add("disable");
     document.querySelector(".jsGrind").classList.add("disable");
     let test = document.querySelectorAll(".summary__container--text");
     test[3].classList.add("disable");
