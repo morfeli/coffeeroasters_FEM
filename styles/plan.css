@@ -845,4 +845,10 @@ hr {
 .jsGrind.disable {
   display: none;
 }
+
+.subscription__container {
+  height: 80vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
 /*# sourceMappingURL=plan.css.map */

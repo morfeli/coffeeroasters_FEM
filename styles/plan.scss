@@ -367,6 +367,7 @@ label {
 .options__container.open {
   display: flex;
   flex-direction: column;
+
   @include tablet {
     flex-direction: row;
   }
@@ -641,4 +642,10 @@ hr {
 
 .jsGrind.disable {
   display: none;
+}
+
+.subscription__container {
+  height: 80vh;
+  overflow: hidden;
+  overflow-y: scroll;
 }
