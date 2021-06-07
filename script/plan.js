@@ -145,6 +145,11 @@ capsule.addEventListener("click", () => {
   if (capsule.checked) {
     document.getElementById("as/using").innerHTML = "using";
   }
+  if (capsule.checked) {
+    document.querySelector(".jsGrind").classList.add("disable");
+    let test = document.querySelectorAll(".summary__container--text");
+    test[3].classList.add("disable");
+  }
 });
 
 filter.addEventListener("click", () => {
@@ -152,11 +157,21 @@ filter.addEventListener("click", () => {
   if (filter.checked) {
     document.getElementById("as/using").innerHTML = "as";
   }
+  if (filter.checked) {
+    document.querySelector(".jsGrind").classList.remove("disable");
+    let test = document.querySelectorAll(".summary__container--text");
+    test[3].classList.remove("disable");
+  }
 });
 
 espresso.addEventListener("click", () => {
   questionBox[3].children[0].classList.remove("question--disabled");
   if (espresso.checked) {
     document.getElementById("as/using").innerHTML = "as";
+  }
+  if (espresso.checked) {
+    document.querySelector(".jsGrind").classList.remove("disable");
+    let test = document.querySelectorAll(".summary__container--text");
+    test[3].classList.remove("disable");
   }
 });
