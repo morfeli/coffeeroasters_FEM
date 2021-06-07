@@ -365,9 +365,10 @@ label {
   }
 }
 .options__container.open {
-  display: block;
+  display: flex;
+  flex-direction: column;
   @include tablet {
-    display: flex;
+    flex-direction: row;
   }
 }
 .question__container--img.rotate {
@@ -376,10 +377,6 @@ label {
 
 .options__container--option:hover {
   background-color: $bigselection-hover;
-}
-
-.options__container--option.active {
-  background-color: $bigselection-active;
 }
 
 .summary__container {
@@ -633,4 +630,11 @@ hr {
 
 .question__container--img.rotate {
   transform: rotate(180deg);
+}
+
+.question--disabled {
+  user-select: none;
+  pointer-events: none;
+  cursor: auto;
+  color: #c1c3c7;
 }

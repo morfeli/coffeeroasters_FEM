@@ -3,7 +3,6 @@ const hamburgerBtn = document.getElementsByClassName("toggle-button")[0];
 const navBarLinks = document.getElementsByClassName("navbar-links")[0];
 const arrowButton = document.getElementsByClassName("question__container--img");
 let headers = document.getElementsByClassName("options__container--option");
-let radios = document.getElementsByClassName("radios");
 
 const options = document.getElementsByClassName("options__container");
 const preferences = document.getElementsByName("preferences");
@@ -120,3 +119,44 @@ function callLoopRadioBtns() {
 }
 callLoopRadioBtns();
 //
+
+const capsule = document.getElementById("capsule");
+const filter = document.getElementById("filter");
+const espresso = document.getElementById("espresso");
+
+const single = document.getElementById("single");
+const decaf = document.getElementById("decaf");
+const blended = document.getElementById("blended");
+
+const small = document.getElementById("250g");
+const medium = document.getElementById("500g");
+const large = document.getElementById("1000g");
+
+const wholebean = document.getElementById("wholebean");
+const filtergrind = document.getElementById("filtergrind");
+const cafetiere = document.getElementById("cafetiére");
+
+const everyweek = document.getElementById("everyweek");
+const every2weeks = document.getElementById("every2weeks");
+const everymonth = document.getElementById("everymonth");
+
+capsule.addEventListener("click", () => {
+  questionBox[3].children[0].classList.add("question--disabled");
+  if (capsule.checked) {
+    document.getElementById("as/using").innerHTML = "using";
+  }
+});
+
+filter.addEventListener("click", () => {
+  questionBox[3].children[0].classList.remove("question--disabled");
+  if (filter.checked) {
+    document.getElementById("as/using").innerHTML = "as";
+  }
+});
+
+espresso.addEventListener("click", () => {
+  questionBox[3].children[0].classList.remove("question--disabled");
+  if (espresso.checked) {
+    document.getElementById("as/using").innerHTML = "as";
+  }
+});
