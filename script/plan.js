@@ -159,6 +159,7 @@ filter.addEventListener("click", () => {
     document.getElementById("as/using").innerHTML = "as";
   }
   if (filter.checked) {
+    document.querySelector(".is-hidden").classList.remove("disable");
     document.querySelector(".jsGrind").classList.remove("disable");
     let test = document.querySelectorAll(".summary__container--text");
     test[3].classList.remove("disable");
@@ -171,6 +172,7 @@ espresso.addEventListener("click", () => {
     document.getElementById("as/using").innerHTML = "as";
   }
   if (espresso.checked) {
+    document.querySelector(".is-hidden").classList.remove("disable");
     document.querySelector(".jsGrind").classList.remove("disable");
     let test = document.querySelectorAll(".summary__container--text");
     test[3].classList.remove("disable");
