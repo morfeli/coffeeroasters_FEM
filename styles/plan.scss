@@ -326,7 +326,9 @@ label {
 }
 
 .options__container {
-  display: none;
+  //   display: none;x
+  overflow: hidden;
+  max-height: 0;
   &--option {
     width: 328px;
     height: 140px;
@@ -367,6 +369,8 @@ label {
 .options__container.open {
   display: flex;
   flex-direction: column;
+  max-height: 50em !important;
+  transition: max-height 2s ease;
 
   @include tablet {
     flex-direction: row;
@@ -645,7 +649,9 @@ hr {
 }
 
 .subscription__container {
-  height: 80vh;
-  overflow: hidden;
-  overflow-y: scroll;
+  @include tablet {
+    height: 80vh;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
 }

@@ -413,7 +413,8 @@ label {
 }
 
 .options__container {
-  display: none;
+  overflow: hidden;
+  max-height: 0;
 }
 
 .options__container--option {
@@ -469,6 +470,9 @@ label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  max-height: 50em !important;
+  -webkit-transition: max-height 2s ease;
+  transition: max-height 2s ease;
 }
 
 @media (min-width: 768px) {
@@ -846,9 +850,11 @@ hr {
   display: none;
 }
 
-.subscription__container {
-  height: 80vh;
-  overflow: hidden;
-  overflow-y: scroll;
+@media (min-width: 768px) {
+  .subscription__container {
+    height: 80vh;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
 }
 /*# sourceMappingURL=plan.css.map */
