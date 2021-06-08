@@ -655,3 +655,81 @@ hr {
     overflow-y: scroll;
   }
 }
+
+.modal__container {
+  //   display: none;
+  @include mobile {
+    display: none;
+    flex-direction: column;
+    width: 330px;
+    height: 597px;
+    position: absolute;
+    left: 24px;
+    top: 35px;
+    background-color: white;
+    border-radius: 15px;
+  }
+  &--header {
+    width: 327px;
+    height: 88px;
+    background-color: $darkgreyblue;
+    border-radius: 15px;
+  }
+
+  &--heading {
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    color: $white-text;
+    font-size: 28px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  &--info {
+    width: 279px;
+    height: 240px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    line-height: 50px;
+  }
+  &--text {
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: $grey;
+  }
+
+  &--span {
+    color: $darkcyan;
+  }
+  &--description {
+    width: 279px;
+    height: 125px;
+    margin-left: 1rem;
+    line-height: 25px;
+  }
+  &--correct {
+    font-family: "Barlow", sans-serif;
+  }
+
+  &--btn {
+    width: 279px;
+    height: 56px;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    background-color: $darkcyan;
+    border: none;
+  }
+
+  &--a {
+    text-decoration: none;
+    color: $white-text;
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
+
+.modal__container.open {
+  display: flex;
+}

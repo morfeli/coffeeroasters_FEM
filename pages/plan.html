@@ -47,6 +47,26 @@
         </div>
       </nav>
     </header>
+    <section id="modal" class="modal__container">
+      <header class="modal__container--header">
+        <h3 class="modal__container--heading">Order Summary</h3>
+      </header>
+      <div id="modal-summary" class="modal__container--info"></div>
+      <div class="modal__container--description">
+        <p class="modal__container--correct">
+          Is this correct? You can proceed to checkout or go back to plan
+          selection if something is off. Subscription discount codes can also be
+          redeemed at the checkout.
+        </p>
+      </div>
+      <div class="modal__container--button">
+        <button class="modal__container--btn">
+          <a class="modal__container--a" href=""
+            >Checkout ~ <span id="jsCheckoutPrice"></span
+          ></a>
+        </button>
+      </div>
+    </section>
     <section class="hero__container">
       <h1 class="hero__container--title">Create a plan</h1>
       <p class="hero__container--description">
@@ -415,7 +435,7 @@
           </div>
         </section>
         <div class="button__container">
-          <button class="button__container--btn" data-open="modal">
+          <button class="button__container--btn" id="confirm">
             Create your plan!
           </button>
         </div>

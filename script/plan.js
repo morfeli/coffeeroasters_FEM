@@ -18,6 +18,32 @@ const dataGrind = document.querySelector(".jsGrind");
 const dataDelivery = document.querySelector(".jsDelivery");
 const coffeePrice = document.querySelectorAll("[data-price]");
 
+const modalPreference = document.querySelector(".jsModalPreference");
+const modalBean = document.querySelector(".jsModalBean");
+const modalQuantity = document.querySelector(".jsModalQuantity");
+const modalGrind = document.querySelector(".jsModalGrind");
+const modalDelivery = document.querySelector(".jsModalDelivery");
+
+const capsule = document.getElementById("capsule");
+const filter = document.getElementById("filter");
+const espresso = document.getElementById("espresso");
+
+const single = document.getElementById("single");
+const decaf = document.getElementById("decaf");
+const blended = document.getElementById("blended");
+
+const small = document.getElementById("250g");
+const medium = document.getElementById("500g");
+const large = document.getElementById("1000g");
+
+const wholebean = document.getElementById("wholebean");
+const filtergrind = document.getElementById("filtergrind");
+const cafetiere = document.getElementById("cafetiére");
+
+const everyweek = document.getElementById("everyweek");
+const every2weeks = document.getElementById("every2weeks");
+const everymonth = document.getElementById("everymonth");
+
 hamburgerBtn.addEventListener("click", () => {
   navBarLinks.classList.toggle("active");
 });
@@ -87,6 +113,7 @@ const questionBox = document.getElementsByClassName("question__container");
 });
 
 //
+
 function loopOptionDivs() {
   for (let i = 0; i < options.length; i++) {
     options[i].addEventListener("click", (e) => {
@@ -100,6 +127,15 @@ function loopOptionDivs() {
 }
 loopOptionDivs();
 
+function callLoopRadioBtns() {
+  loopRadioBtns(preferences, dataPreference);
+  loopRadioBtns(beanType, dataBean);
+  loopRadioBtns(quantity, dataQuantity);
+  loopRadioBtns(grind, dataGrind);
+  loopRadioBtns(deliveries, dataDelivery);
+}
+callLoopRadioBtns();
+
 function loopRadioBtns(arr, spanEl) {
   for (let i = 0; i < arr.length; i++) {
     const element = arr[i];
@@ -110,35 +146,14 @@ function loopRadioBtns(arr, spanEl) {
   }
 }
 
-function callLoopRadioBtns() {
-  loopRadioBtns(preferences, dataPreference);
-  loopRadioBtns(beanType, dataBean);
-  loopRadioBtns(quantity, dataQuantity);
-  loopRadioBtns(grind, dataGrind);
-  loopRadioBtns(deliveries, dataDelivery);
-}
-callLoopRadioBtns();
-//
-
-const capsule = document.getElementById("capsule");
-const filter = document.getElementById("filter");
-const espresso = document.getElementById("espresso");
-
-const single = document.getElementById("single");
-const decaf = document.getElementById("decaf");
-const blended = document.getElementById("blended");
-
-const small = document.getElementById("250g");
-const medium = document.getElementById("500g");
-const large = document.getElementById("1000g");
-
-const wholebean = document.getElementById("wholebean");
-const filtergrind = document.getElementById("filtergrind");
-const cafetiere = document.getElementById("cafetiére");
-
-const everyweek = document.getElementById("everyweek");
-const every2weeks = document.getElementById("every2weeks");
-const everymonth = document.getElementById("everymonth");
+const modalBtn = document.getElementById("confirm");
+const summaryBox = document.querySelector(".summary__container--orderBox");
+modalBtn.addEventListener("click", () => {
+  const modal = document.querySelector(".modal__container");
+  modal.classList.toggle("open");
+  document.getElementById("modal-summary").innerHTML =
+    summaryBox.children[1].innerHTML;
+});
 
 capsule.addEventListener("click", () => {
   questionBox[3].children[0].classList.add("question--disabled");
@@ -150,6 +165,8 @@ capsule.addEventListener("click", () => {
     document.querySelector(".jsGrind").classList.add("disable");
     let test = document.querySelectorAll(".summary__container--text");
     test[3].classList.add("disable");
+    // let submenus = document.getElementsByClassName("options__container");
+    // submenus[3].classList.add("disable");
   }
 });
 
