@@ -521,7 +521,6 @@ label {
   font-weight: 300;
   color: #848990;
   padding-top: 2rem;
-  margin-left: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -531,7 +530,6 @@ label {
   font-weight: bold;
   font-size: 25px;
   width: 260px;
-  margin-left: 1rem;
   line-height: 4rem;
 }
 
@@ -632,7 +630,6 @@ label {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  padding-top: 8rem;
 }
 
 @media (min-width: 768px) {
@@ -866,12 +863,13 @@ hr {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 330px;
-    height: 597px;
+    height: auto;
     position: absolute;
     left: 24px;
     top: 35px;
     background-color: white;
     border-radius: 15px;
+    padding-bottom: 2rem;
   }
 }
 
@@ -897,23 +895,17 @@ hr {
   margin-top: 1rem;
   margin-left: 1rem;
   line-height: 50px;
-}
-
-.modal__container--text {
   font-family: "Fraunces", serif;
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #848990;
-}
-
-.modal__container--span {
-  color: #0e8684;
 }
 
 .modal__container--description {
   width: 279px;
   height: 125px;
   margin-left: 1rem;
+  margin-top: 1rem;
   line-height: 25px;
 }
 
