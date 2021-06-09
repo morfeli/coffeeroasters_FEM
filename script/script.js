@@ -78,7 +78,7 @@ const renderProducts = (arr) => {
     .map((product) => {
       return `
         <div class="coffee__container">
-        <img class="coffee__container--img" src="${product.image}"/>
+        <img class="coffee__container--img" src="${product.image}" alt="product"/>
         <div class="coffee__container--tabletBox">
         <h2 class="coffee__container--title">${product.title}</h2>
         <p class="coffee__container--description">${product.description}</p>
@@ -97,7 +97,7 @@ const renderBenefits = (arr) => {
     .map((benefit) => {
       return `
           <div class="benefit__container">
-          <img class="benefit__container--img" src="${benefit.image}"/>
+          <img class="benefit__container--img" src="${benefit.image}" alt="benefit"/>
           <div class="benefit__container--tabletBox">
           <h2 class="benefit__container--title">${benefit.title}</h2>
           <p class="benefit__container--description">${benefit.description}</p>

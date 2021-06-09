@@ -25,7 +25,7 @@ const renderLocations = (arr) => {
     .map((location) => {
       return `
               <div class="location__container">
-              <img class="location__container--img" src="${location.image}"/>
+              <img class="location__container--img" src="${location.image}" alt="location"/>
               <h1 class="location__container--title">${location.country}</h1>
               <p class="location__container--description">${location.details}</p>
               </div>
