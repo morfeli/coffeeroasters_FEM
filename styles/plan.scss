@@ -245,7 +245,6 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   @include tablet {
     width: 238px;
     text-align: left;
-    // margin-top: 7rem;
     margin-left: 1.5rem;
   }
   @include desktop {
