@@ -219,3 +219,79 @@ large.addEventListener("click", () => {
     document.getElementById("price3").innerHTML = "$42.00";
   }
 });
+
+const checkoutPrice = () => {
+  const twofifty = document.getElementById("250g");
+  const fivehun = document.getElementById("500g");
+  const onek = document.getElementById("1000g");
+  const week = document.getElementById("everyweek");
+  const twoweeks = document.getElementById("every2weeks");
+  const onemonth = document.getElementById("everymonth");
+  twofifty.addEventListener("click", () => {
+    if (twofifty.checked && week.checked) {
+      document.getElementById("jsCheckoutPrice").innerHTML = "$22.80";
+    }
+    if (twofifty.checked && twoweeks.checked) {
+      document.getElementById("jsCheckoutPrice").innerHTML = "$19.20";
+    }
+    if (twofifty.checked && onemonth.checked) {
+      document.getElementById("jsCheckoutPrice").innerHTML = "$12.00";
+    }
+  });
+  fivehun.addEventListener("click", () => {
+    if (fivehun.checked && week.checked) {
+      document.getElementById("jsCheckoutPrice").innerHTML = "$52.80";
+    }
+    if (fivehun.checked && twoweeks.checked) {
+      document.getElementById("jsCheckoutPrice").innerHTML = "$35.00";
+    }
+    if (fivehun.checked && onemonth.checked) {
+      document.getElementById("jsCheckoutPrice").innerHTML = "$22.00";
+    }
+  });
+  onek.addEventListener("click", () => {
+    if (onek.checked && week.checked) {
+      document.getElementById("jsCheckoutPrice").innerHTML = "$88.00";
+    }
+    if (onek.checked && twoweeks.checked) {
+      document.getElementById("jsCheckoutPrice").innerHTML = "$64.00";
+    }
+    if (onek.checked && onemonth.checked) {
+      document.getElementById("jsCheckoutPrice").innerHTML = "$42.00";
+    }
+  });
+  week.addEventListener("click", () => {
+    if (week.checked && twofifty.checked) {
+      document.getElementById("jsCheckoutPrice").innerHTML = "$22.80";
+    }
+    if (week.checked && fivehun.checked) {
+      document.getElementById("jsCheckoutPrice").innerHTML = "$19.20";
+    }
+    if (week.checked && onek.checked) {
+      document.getElementById("jsCheckoutPrice").innerHTML = "$12.00";
+    }
+  });
+  twoweeks.addEventListener("click", () => {
+    if (twoweeks.checked && twofifty.checked) {
+      document.getElementById("jsCheckoutPrice").innerHTML = "$19.20";
+    }
+    if (twoweeks.checked && fivehun.checked) {
+      document.getElementById("jsCheckoutPrice").innerHTML = "$35.00";
+    }
+    if (twoweeks.checked && onek.checked) {
+      document.getElementById("jsCheckoutPrice").innerHTML = "$64.00";
+    }
+  });
+  onemonth.addEventListener("click", () => {
+    if (onemonth.checked && twofifty.checked) {
+      document.getElementById("jsCheckoutPrice").innerHTML = "$12.00";
+    }
+    if (onemonth.checked && fivehun.checked) {
+      document.getElementById("jsCheckoutPrice").innerHTML = "$22.00";
+    }
+    if (onemonth.checked && onek.checked) {
+      document.getElementById("jsCheckoutPrice").innerHTML = "$42.00";
+    }
+  });
+};
+checkoutPrice();
