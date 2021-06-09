@@ -590,6 +590,18 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 }
 
 .footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   height: 418px;
   width: 327px;
   margin: 2rem auto;
@@ -607,15 +619,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   .footer__container {
     width: 1280px;
     height: 120px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -634,19 +641,11 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  padding-top: 8rem;
-}
-
-@media (min-width: 768px) {
-  .footer__container--links {
-    padding-top: unset;
-  }
 }
 
 @media (min-width: 1440px) {
   .footer__container--links {
-    padding-top: unset;
-    margin-left: 8rem;
+    margin-left: 10rem;
   }
 }
 
@@ -658,13 +657,13 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 2rem auto;
   cursor: pointer;
+  margin: 2rem auto;
 }
 
 @media (min-width: 1440px) {
   .footer__container--icons {
-    margin-right: 3rem;
+    margin-left: 20rem;
   }
 }
 
@@ -679,13 +678,6 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 6rem;
-  }
-}
-
-@media (min-width: 1440px) {
-  .footer__container--links ul {
-    margin-top: unset;
   }
 }
 

@@ -16,13 +16,6 @@ const dataBean = document.querySelector(".jsBean");
 const dataQuantity = document.querySelector(".jsQuantity");
 const dataGrind = document.querySelector(".jsGrind");
 const dataDelivery = document.querySelector(".jsDelivery");
-const coffeePrice = document.querySelectorAll("[data-price]");
-
-const modalPreference = document.querySelector(".jsModalPreference");
-const modalBean = document.querySelector(".jsModalBean");
-const modalQuantity = document.querySelector(".jsModalQuantity");
-const modalGrind = document.querySelector(".jsModalGrind");
-const modalDelivery = document.querySelector(".jsModalDelivery");
 
 const capsule = document.getElementById("capsule");
 const filter = document.getElementById("filter");
@@ -165,8 +158,6 @@ capsule.addEventListener("click", () => {
     document.querySelector(".jsGrind").classList.add("disable");
     let test = document.querySelectorAll(".summary__container--text");
     test[3].classList.add("disable");
-    // let submenus = document.getElementsByClassName("options__container");
-    // submenus[3].classList.add("disable");
   }
 });
 
@@ -229,68 +220,68 @@ const checkoutPrice = () => {
   const onemonth = document.getElementById("everymonth");
   twofifty.addEventListener("click", () => {
     if (twofifty.checked && week.checked) {
-      document.getElementById("jsCheckoutPrice").innerHTML = "$22.80";
+      document.getElementById("jsCheckoutPrice").innerHTML = "$22.80 / mo";
     }
     if (twofifty.checked && twoweeks.checked) {
-      document.getElementById("jsCheckoutPrice").innerHTML = "$19.20";
+      document.getElementById("jsCheckoutPrice").innerHTML = "$19.20 / mo";
     }
     if (twofifty.checked && onemonth.checked) {
-      document.getElementById("jsCheckoutPrice").innerHTML = "$12.00";
+      document.getElementById("jsCheckoutPrice").innerHTML = "$12.00 / mo";
     }
   });
   fivehun.addEventListener("click", () => {
     if (fivehun.checked && week.checked) {
-      document.getElementById("jsCheckoutPrice").innerHTML = "$52.80";
+      document.getElementById("jsCheckoutPrice").innerHTML = "$52.80 / mo";
     }
     if (fivehun.checked && twoweeks.checked) {
-      document.getElementById("jsCheckoutPrice").innerHTML = "$35.00";
+      document.getElementById("jsCheckoutPrice").innerHTML = "$35.00 / mo";
     }
     if (fivehun.checked && onemonth.checked) {
-      document.getElementById("jsCheckoutPrice").innerHTML = "$22.00";
+      document.getElementById("jsCheckoutPrice").innerHTML = "$22.00 / mo";
     }
   });
   onek.addEventListener("click", () => {
     if (onek.checked && week.checked) {
-      document.getElementById("jsCheckoutPrice").innerHTML = "$88.00";
+      document.getElementById("jsCheckoutPrice").innerHTML = "$88.00 / mo";
     }
     if (onek.checked && twoweeks.checked) {
-      document.getElementById("jsCheckoutPrice").innerHTML = "$64.00";
+      document.getElementById("jsCheckoutPrice").innerHTML = "$64.00 / mo";
     }
     if (onek.checked && onemonth.checked) {
-      document.getElementById("jsCheckoutPrice").innerHTML = "$42.00";
+      document.getElementById("jsCheckoutPrice").innerHTML = "$42.00 / mo";
     }
   });
   week.addEventListener("click", () => {
     if (week.checked && twofifty.checked) {
-      document.getElementById("jsCheckoutPrice").innerHTML = "$22.80";
+      document.getElementById("jsCheckoutPrice").innerHTML = "$22.80 / mo";
     }
     if (week.checked && fivehun.checked) {
-      document.getElementById("jsCheckoutPrice").innerHTML = "$19.20";
+      document.getElementById("jsCheckoutPrice").innerHTML = "$19.20 / mo";
     }
     if (week.checked && onek.checked) {
-      document.getElementById("jsCheckoutPrice").innerHTML = "$12.00";
+      document.getElementById("jsCheckoutPrice").innerHTML = "$12.00 / mo";
     }
   });
   twoweeks.addEventListener("click", () => {
     if (twoweeks.checked && twofifty.checked) {
-      document.getElementById("jsCheckoutPrice").innerHTML = "$19.20";
+      document.getElementById("jsCheckoutPrice").innerHTML = "$19.20 / mo";
     }
     if (twoweeks.checked && fivehun.checked) {
-      document.getElementById("jsCheckoutPrice").innerHTML = "$35.00";
+      document.getElementById("jsCheckoutPrice").innerHTML = "$35.00 / mo";
     }
     if (twoweeks.checked && onek.checked) {
-      document.getElementById("jsCheckoutPrice").innerHTML = "$64.00";
+      document.getElementById("jsCheckoutPrice").innerHTML = "$64.00 / mo";
     }
   });
   onemonth.addEventListener("click", () => {
     if (onemonth.checked && twofifty.checked) {
-      document.getElementById("jsCheckoutPrice").innerHTML = "$12.00";
+      document.getElementById("jsCheckoutPrice").innerHTML = "$12.00 / mo";
     }
     if (onemonth.checked && fivehun.checked) {
-      document.getElementById("jsCheckoutPrice").innerHTML = "$22.00";
+      document.getElementById("jsCheckoutPrice").innerHTML = "$22.00 / mo";
     }
     if (onemonth.checked && onek.checked) {
-      document.getElementById("jsCheckoutPrice").innerHTML = "$42.00";
+      document.getElementById("jsCheckoutPrice").innerHTML = "$42.00 / mo";
     }
   });
 };

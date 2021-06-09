@@ -10,7 +10,7 @@
     </style>
     <title>Create your plan</title>
   </head>
-  <body>
+  <body id="body">
     <header>
       <nav class="navbar">
         <img
@@ -62,8 +62,8 @@
       <div class="modal__container--button">
         <button class="modal__container--btn">
           <a class="modal__container--a" href=""
-            >Checkout ~ <span id="jsCheckoutPrice"></span></a
-          ><span> / mo</span>
+            >Checkout ~ <span id="jsCheckoutPrice"></span
+          ></a>
         </button>
       </div>
     </section>
@@ -142,7 +142,6 @@
             <input
               id="capsule"
               type="radio"
-              data-preference="Capsule"
               value="Capsules"
               name="preferences"
             />
@@ -153,13 +152,7 @@
               </p>
             </label>
 
-            <input
-              id="filter"
-              type="radio"
-              data-preference="Filter"
-              value="Filter"
-              name="preferences"
-            />
+            <input id="filter" type="radio" value="Filter" name="preferences" />
             <label class="options__container--option" for="filter">
               <h4 class="options__container--title">Filter</h4>
               <p class="options__container--description">
@@ -170,7 +163,6 @@
             <input
               id="espresso"
               type="radio"
-              data-preference="Espresso"
               value="Espresso"
               name="preferences"
             />
@@ -193,13 +185,7 @@
             />
           </div>
           <div class="options__container">
-            <input
-              id="single"
-              type="radio"
-              data-bean="Single"
-              value="Single"
-              name="beanType"
-            />
+            <input id="single" type="radio" value="Single" name="beanType" />
             <label class="options__container--option" for="single">
               <h4 class="options__container--title">Single Origin</h4>
               <p class="options__container--description">
@@ -207,13 +193,7 @@
               </p>
             </label>
 
-            <input
-              id="decaf"
-              type="radio"
-              data-bean="Decaf"
-              value="Decaf"
-              name="beanType"
-            />
+            <input id="decaf" type="radio" value="Decaf" name="beanType" />
             <label class="options__container--option" for="decaf">
               <h4 class="options__container--title">Decaf</h4>
               <p class="options__container--description">
@@ -221,13 +201,7 @@
               </p>
             </label>
 
-            <input
-              id="blended"
-              type="radio"
-              data-preference="Blended"
-              value="Blended"
-              name="beanType"
-            />
+            <input id="blended" type="radio" value="Blended" name="beanType" />
             <label class="options__container--option" for="blended">
               <h4 class="options__container--title">Blended</h4>
               <p class="options__container--description">
@@ -247,13 +221,7 @@
             />
           </div>
           <div class="options__container">
-            <input
-              id="250g"
-              type="radio"
-              data-quantity="250g"
-              value="250g"
-              name="quantity"
-            />
+            <input id="250g" type="radio" value="250g" name="quantity" />
             <label class="options__container--option" for="250g">
               <h4 class="options__container--title">250g</h4>
               <p class="options__container--description">
@@ -261,13 +229,7 @@
               </p>
             </label>
 
-            <input
-              id="500g"
-              type="radio"
-              data-quantity="500g"
-              value="500g"
-              name="quantity"
-            />
+            <input id="500g" type="radio" value="500g" name="quantity" />
             <label class="options__container--option" for="500g">
               <h4 class="options__container--title">500g</h4>
               <p class="options__container--description">
@@ -275,13 +237,7 @@
               </p>
             </label>
 
-            <input
-              id="1000g"
-              type="radio"
-              data-quantity="1000g"
-              value="1000g"
-              name="quantity"
-            />
+            <input id="1000g" type="radio" value="1000g" name="quantity" />
             <label class="options__container--option" for="1000g">
               <h4 class="options__container--title">1000g</h4>
               <p class="options__container--description">
@@ -303,7 +259,6 @@
             <input
               id="wholebean"
               type="radio"
-              data-grind="Whole Bean"
               value="Whole Bean"
               name="grindType"
             />
@@ -317,7 +272,6 @@
             <input
               id="filtergrind"
               type="radio"
-              data-grind="Filter"
               value="Filter"
               name="grindType"
             />
@@ -331,7 +285,6 @@
             <input
               id="cafetiére"
               type="radio"
-              data-grind="Cafetiére"
               value="Cafetiére"
               name="grindType"
             />
@@ -358,8 +311,6 @@
             <input
               id="everyweek"
               type="radio"
-              data-delivery="Every Week"
-              data-price="$7.20"
               value="Every Week"
               name="deliveryType"
             />
@@ -374,8 +325,6 @@
             <input
               id="every2weeks"
               type="radio"
-              data-delivery="Every 2 weeks"
-              data-price="$9.60"
               value="Every 2 weeks"
               name="deliveryType"
             />
@@ -390,8 +339,6 @@
             <input
               id="everymonth"
               type="radio"
-              data-delivery="Every Month"
-              data-price="$12.00"
               value="Every Month"
               name="deliveryType"
             />
@@ -435,7 +382,7 @@
           </div>
         </section>
         <div class="button__container">
-          <button class="button__container--btn" id="confirm">
+          <button class="button__container--btn" id="confirm" href="#modal">
             Create your plan!
           </button>
         </div>

@@ -457,10 +457,15 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
 }
 
 .footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   height: 418px;
   width: 327px;
   margin: 2rem auto;
   background-color: $darkgreyblue;
+
   @include tablet {
     width: 688px;
     height: 270px;
@@ -468,9 +473,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   @include desktop {
     width: 1280px;
     height: 120px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
   }
 
   &--heading {
@@ -483,13 +486,8 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-top: 8rem;
-    @include tablet {
-      padding-top: unset;
-    }
     @include desktop {
-      padding-top: unset;
-      margin-left: 8rem;
+      margin-left: 10rem;
     }
   }
 
@@ -497,10 +495,10 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     width: 120px;
     display: flex;
     justify-content: space-between;
-    margin: 2rem auto;
     cursor: pointer;
+    margin: 2rem auto;
     @include desktop {
-      margin-right: 3rem;
+      margin-left: 20rem;
     }
   }
 }
@@ -510,10 +508,6 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 6rem;
-  }
-  @include desktop {
-    margin-top: unset;
   }
 }
 
