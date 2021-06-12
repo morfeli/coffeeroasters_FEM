@@ -311,7 +311,8 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     width: 688px;
   }
   @include desktop {
-    width: 1200px;
+    width: 1280px;
+    height: 577px;
   }
   &--title {
     font-family: "Fraunces", serif;
@@ -369,6 +370,7 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
     width: 350px;
     height: 382px;
     flex-direction: column;
+    bottom: 225px;
   }
   .benefit__container--tabletBox {
     @include tablet {
@@ -435,6 +437,9 @@ input[type="checkbox"]:checked ~ .toggle-button .middle {
   align-items: center;
   @include tablet {
     align-items: unset;
+  }
+  @include desktop {
+    margin-top: 15rem;
   }
   &--title {
     font-family: "Fraunces", serif;
